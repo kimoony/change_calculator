@@ -1,24 +1,30 @@
 import React from "react";
 import "../style/WeightNCharge.css";
+import PostWeight from "./weightType/PostWeight";
+import RegisterWeight from "./weightType/RegisterWeight";
+import FastRegisterWeight from "./weightType/FastRegisterWeight";
+import ReceiveCash from "./ReceiveCash";
 
-function WeightNCharge() {
+function WeightNCharge({ setWeightShow, typeChecked, clickWeightValue }) {
+  const closeWeightCharge = () => setWeightShow(false);
+
   return (
     <section className="postWeightCharge">
+      <h2 className="closeBtn" onClick={closeWeightCharge}>
+        X
+      </h2>
       <section className="postWeight">
-        <h4>무게</h4>
-        <select name="weight" id="weight">
-          <option value="default">선택</option>
-          <option value="5g">5g</option>
-        </select>
+        <h4>{typeChecked} 무게</h4>
+        {typeChecked === "일반우편" ? (
+          <PostWeight clickWeightValue={clickWeightValue} />
+        ) : typeChecked === "등기" ? (
+          <RegisterWeight clickWeightValue={clickWeightValue} />
+        ) : typeChecked === "익일특급" ? (
+          <FastRegisterWeight clickWeightValue={clickWeightValue} />
+        ) : null}
       </section>
       <section className="postCharge">
-        <div className="cashCharge">
-          <h4>받은 돈</h4>
-          <div id="fiveThousand">5,000</div>
-          <div>/</div>
-          <div id="tenThousand">10,000</div>
-        </div>
-        <input type="number" placeholder="직접입력" />
+        <ReceiveCash />
       </section>
     </section>
   );
