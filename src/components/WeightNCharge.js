@@ -5,7 +5,12 @@ import RegisterWeight from "./weightType/RegisterWeight";
 import FastRegisterWeight from "./weightType/FastRegisterWeight";
 import ReceiveCash from "./ReceiveCash";
 
-function WeightNCharge({ setWeightShow, typeChecked, clickWeightValue }) {
+function WeightNCharge({
+  setWeightShow,
+  typeChecked,
+  clickWeightValue,
+  setCash,
+}) {
   const closeWeightCharge = () => setWeightShow(false);
 
   return (
@@ -24,7 +29,7 @@ function WeightNCharge({ setWeightShow, typeChecked, clickWeightValue }) {
         ) : null}
       </section>
       <section className="postCharge">
-        <ReceiveCash />
+        <ReceiveCash setCash={setCash} />
       </section>
     </section>
   );

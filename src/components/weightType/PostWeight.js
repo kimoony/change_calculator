@@ -7,7 +7,7 @@ function PostWeight({ clickWeightValue }) {
   return (
     <section>
       <select name="weight" id="weight" onChange={onSelect}>
-        <option value="default">선택</option>
+        <option value="">선택</option>
         <option value="400">5g 규격</option>
         <option value="430">25g 규격</option>
         <option value="450">50g 구격</option>

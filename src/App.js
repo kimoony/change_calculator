@@ -8,6 +8,14 @@ function App() {
   const [weightShow, setWeightShow] = useState(false);
   const [typeChecked, setTypeChecked] = useState("");
   const [weightValue, setWeightValue] = useState(null);
+  const [cash, setCash] = useState(null);
+
+  const onClickClear = () => {
+    setWeightValue(null);
+    setCash(null);
+    setTypeChecked("");
+    setWeightShow(false);
+  };
 
   return (
     <section className="body">
@@ -21,10 +29,14 @@ function App() {
           setWeightShow={setWeightShow}
           typeChecked={typeChecked}
           clickWeightValue={setWeightValue}
+          setCash={setCash}
         />
       ) : null}
-      {weightValue !== null ? (
-        <CalculatedValue weightValue={weightValue} />
+      {weightValue !== null || cash !== null ? (
+        <div>
+          <CalculatedValue weightValue={Number(weightValue)} cash={cash} />
+          <button onClick={onClickClear}>초기화</button>
+        </div>
       ) : null}
     </section>
   );
