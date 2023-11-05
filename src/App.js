@@ -9,35 +9,39 @@ function App() {
   const [typeChecked, setTypeChecked] = useState("");
   const [weightValue, setWeightValue] = useState(null);
   const [cash, setCash] = useState(null);
+  const [changeCash, setChangeCash] = useState(0);
 
-  const onClickClear = () => {
+  // 초기화
+  const onClickReset = () => {
     setWeightValue(null);
     setCash(null);
     setTypeChecked("");
     setWeightShow(false);
+    setChangeCash(0);
   };
 
   return (
-    <section className="body">
-      <TopMenu
-        setWeightShow={setWeightShow}
-        typeChecked={typeChecked}
-        setTypeChecked={setTypeChecked}
-      />
+    <section className="mainBox">
+      <h1>등기 거스름돈 계산기</h1>
+      <TopMenu setWeightShow={setWeightShow} setTypeChecked={setTypeChecked} />
       {weightShow === true ? (
         <WeightNCharge
-          setWeightShow={setWeightShow}
           typeChecked={typeChecked}
           clickWeightValue={setWeightValue}
           setCash={setCash}
+          onClickReset={onClickReset}
         />
       ) : null}
-      {weightValue !== null || cash !== null ? (
-        <div>
-          <CalculatedValue weightValue={Number(weightValue)} cash={cash} />
-          <button onClick={onClickClear}>초기화</button>
-        </div>
-      ) : null}
+      <section className="changeCashBox">
+        {weightValue !== null || cash !== null ? (
+          <CalculatedValue
+            weightValue={Number(weightValue)}
+            cash={cash}
+            changeCash={changeCash}
+            setChangeCash={setChangeCash}
+          />
+        ) : null}
+      </section>
     </section>
   );
 }

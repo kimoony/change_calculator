@@ -1,7 +1,7 @@
 import React from "react";
 import "../style/TopMenu.css";
 
-function TopMenu({ setWeightShow, typeChecked, setTypeChecked }) {
+function TopMenu({ setWeightShow, setTypeChecked }) {
   return (
     <section className="postType">
       <div

@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import "../style/CalculatedValue.css";
 
-function CalculatedValue({ weightValue, cash }) {
-  const [changeCash, setChangeCash] = useState(0);
-
+function CalculatedValue({ weightValue, cash, changeCash, setChangeCash }) {
   const resultValue = () => {
     setChangeCash(cash - weightValue);
     console.log(typeof cash);
@@ -11,17 +9,18 @@ function CalculatedValue({ weightValue, cash }) {
   };
 
   return (
-    <div>
-      {cash}-{weightValue}
-      <button onClick={resultValue}>계산</button>
+    <section className="valueBox">
       <div>
-        {changeCash > 0 ? (
-          <h3>{changeCash}</h3>
-        ) : (
-          <h5>받은 돈을 압력 또는 확인해주세요!</h5>
-        )}
+        <h2>등기비용: {weightValue} 원</h2>
+        {cash !== null ? <h2>받은비용: {cash} 원</h2> : null}
       </div>
-    </div>
+      <div className="resultBox">
+        <button className="resultBtn" onClick={resultValue}>
+          계산
+        </button>
+      </div>
+      {changeCash > 0 ? <h1 className="changeCash">{changeCash} 원</h1> : ""}
+    </section>
   );
 }
 

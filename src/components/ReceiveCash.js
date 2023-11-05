@@ -7,11 +7,11 @@ function ReceiveCash({ setCash }) {
       <div className="cashCharge">
         <h4>받은 돈</h4>
         <div id="fiveThousand" onClick={() => setCash(5000)}>
-          5000
+          5000원
         </div>
         <div>/</div>
         <div id="tenThousand" onClick={() => setCash(10000)}>
-          10000
+          10000원
         </div>
       </div>
       <input type="number" placeholder="직접입력" onChange={onChaneValue} />

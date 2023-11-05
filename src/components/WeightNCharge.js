@@ -6,27 +6,30 @@ import FastRegisterWeight from "./weightType/FastRegisterWeight";
 import ReceiveCash from "./ReceiveCash";
 
 function WeightNCharge({
-  setWeightShow,
   typeChecked,
   clickWeightValue,
   setCash,
+  onClickReset,
 }) {
-  const closeWeightCharge = () => setWeightShow(false);
-
   return (
     <section className="postWeightCharge">
-      <h2 className="closeBtn" onClick={closeWeightCharge}>
-        X
-      </h2>
+      <div className="closeBox">
+        <h2 className="closeBtn" onClick={onClickReset}>
+          x
+        </h2>
+      </div>
       <section className="postWeight">
         <h4>{typeChecked} 무게</h4>
-        {typeChecked === "일반우편" ? (
-          <PostWeight clickWeightValue={clickWeightValue} />
-        ) : typeChecked === "등기" ? (
-          <RegisterWeight clickWeightValue={clickWeightValue} />
-        ) : typeChecked === "익일특급" ? (
-          <FastRegisterWeight clickWeightValue={clickWeightValue} />
-        ) : null}
+        <div className="selectBox">
+          {typeChecked === "일반우편" ? (
+            <PostWeight clickWeightValue={clickWeightValue} />
+          ) : typeChecked === "등기" ? (
+            <RegisterWeight clickWeightValue={clickWeightValue} />
+          ) : typeChecked === "익일특급" ? (
+            <FastRegisterWeight clickWeightValue={clickWeightValue} />
+          ) : null}
+          <button className="addBtn">+</button>
+        </div>
       </section>
       <section className="postCharge">
         <ReceiveCash setCash={setCash} />

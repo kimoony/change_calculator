@@ -1,0 +1,25 @@
+.valueBox {
+  display: flex;
+  flex-direction: column;
+}
+.resultBox {
+  display: flex;
+  justify-content: flex-end;
+}
+.resultBtn {
+  border: 1px solid rgb(246, 181, 61);
+  padding: 5px 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  &:hover {
+    background-color: rgb(246, 181, 61);
+    color: #fff;
+    transition: all 0.1s ease;
+  }
+}
+
+.changeCash {
+  align-self: self-end;
+  font-size: 40px;
+}

@@ -1,7 +1,15 @@
+.closeBox {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+}
 .closeBtn {
-  align-self: flex-end;
-  padding-right: 20px;
-  margin-top: 10px;
+  margin: 10px 0 20px 0;
+  padding: 2.5px 5px;
+  &:hover {
+    color: orangered;
+    cursor: pointer;
+  }
 }
 
 .postWeightCharge {
@@ -25,6 +33,9 @@
 }
 .postWeight h4 {
   margin-right: 28px;
+}
+.selectBox {
+  display: flex;
 }
 #weight {
   width: 120px;

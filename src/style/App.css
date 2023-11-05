@@ -1,9 +1,9 @@
-.body {
+.mainBox {
   margin-top: 10px;
   width: 340px;
   height: 500px;
   display: flex;
   align-items: center;
-  border: 2px solid red;
   flex-direction: column;
+  transition: all 0.5s ease;
 }
