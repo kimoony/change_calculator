@@ -23,7 +23,13 @@ function App() {
   return (
     <section className="mainBox">
       <h1>등기 거스름돈 계산기</h1>
-      <TopMenu setWeightShow={setWeightShow} setTypeChecked={setTypeChecked} />
+      <TopMenu
+        setWeightShow={setWeightShow}
+        setTypeChecked={setTypeChecked}
+        setWeightValue={setWeightValue}
+        setCash={setCash}
+        setChangeCash={setChangeCash}
+      />
       {weightShow === true ? (
         <WeightNCharge
           typeChecked={typeChecked}
@@ -39,6 +45,7 @@ function App() {
             cash={cash}
             changeCash={changeCash}
             setChangeCash={setChangeCash}
+            onClickReset={onClickReset}
           />
         ) : null}
       </section>

@@ -13,7 +13,7 @@ function RegisterWeight({ clickWeightValue }) {
         <option value="2550">50g 구격</option>
         <option value="2620">50g 규격 외</option>
         <option value="2740">100g</option>
-        <option value="2800">150g</option>
+        <option value="2860">150g</option>
         <option value="2980">200g</option>
         <option value="3100">250g</option>
         <option value="3220">300g</option>

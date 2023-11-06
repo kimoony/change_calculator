@@ -13,7 +13,7 @@ function FastRegisterWeight({ clickWeightValue }) {
         <option value="3550">50g 구격</option>
         <option value="3620">50g 규격 외</option>
         <option value="3740">100g</option>
-        <option value="3800">150g</option>
+        <option value="3860">150g</option>
         <option value="3980">200g</option>
         <option value="4100">250g</option>
         <option value="4220">300g</option>

@@ -2,11 +2,13 @@
   display: flex;
   flex-direction: column;
 }
-.resultBox {
+.calculBox,
+.resetBox {
   display: flex;
   justify-content: flex-end;
 }
-.resultBtn {
+.calculBtn,
+.resetBtn {
   border: 1px solid rgb(246, 181, 61);
   padding: 5px 10px;
   font-size: 15px;
@@ -19,7 +21,15 @@
   }
 }
 
+.resultBox,
+.resetBtn {
+  margin-top: -25px;
+}
+
 .changeCash {
-  align-self: self-end;
+  text-align: center;
   font-size: 40px;
+  background-color: rgb(246, 181, 61);
+  border-radius: 15px;
+  padding-top: 5px;
 }

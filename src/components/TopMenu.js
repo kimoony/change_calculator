@@ -1,7 +1,13 @@
 import React from "react";
 import "../style/TopMenu.css";
 
-function TopMenu({ setWeightShow, setTypeChecked }) {
+function TopMenu({
+  setWeightShow,
+  setTypeChecked,
+  setWeightValue,
+  setCash,
+  setChangeCash,
+}) {
   return (
     <section className="postType">
       <div
@@ -9,6 +15,9 @@ function TopMenu({ setWeightShow, setTypeChecked }) {
         onClick={() => {
           setWeightShow(true);
           setTypeChecked("일반우편");
+          setWeightValue(null);
+          setCash(null);
+          setChangeCash(0);
         }}
       >
         일반우편
@@ -18,6 +27,9 @@ function TopMenu({ setWeightShow, setTypeChecked }) {
         onClick={() => {
           setWeightShow(true);
           setTypeChecked("등기");
+          setWeightValue(null);
+          setCash(null);
+          setChangeCash(0);
         }}
       >
         등기
@@ -27,6 +39,9 @@ function TopMenu({ setWeightShow, setTypeChecked }) {
         onClick={() => {
           setWeightShow(true);
           setTypeChecked("익일특급");
+          setWeightValue(null);
+          setCash(null);
+          setChangeCash(0);
         }}
       >
         익일특급
