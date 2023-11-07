@@ -1,7 +1,16 @@
+.calculatorBox {
+  width: 280px;
+  padding: 0 10px;
+}
 .valueBox {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
+.weightValue > h2 {
+  width: 100%;
+}
+
 .calculBox,
 .resetBox {
   display: flex;

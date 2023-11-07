@@ -7,18 +7,23 @@ import CalculatedValue from "./components/CalculatedValue";
 function App() {
   const [weightShow, setWeightShow] = useState(false);
   const [typeChecked, setTypeChecked] = useState("");
-  const [weightValue, setWeightValue] = useState(null);
+  const [weightValue, setWeightValue] = useState([]);
   const [cash, setCash] = useState(null);
   const [changeCash, setChangeCash] = useState(0);
 
   // 초기화
   const onClickReset = () => {
-    setWeightValue(null);
+    setWeightValue([]);
     setCash(null);
     setTypeChecked("");
     setWeightShow(false);
     setChangeCash(0);
   };
+  console.log(weightValue);
+
+  const sum = weightValue.reduce((acc, currentValue) => {
+    return acc + currentValue;
+  }, 0);
 
   return (
     <section className="mainBox">
@@ -33,19 +38,22 @@ function App() {
       {weightShow === true ? (
         <WeightNCharge
           typeChecked={typeChecked}
+          weightValue={weightValue}
           clickWeightValue={setWeightValue}
           setCash={setCash}
           onClickReset={onClickReset}
+          sum={sum}
         />
       ) : null}
       <section className="changeCashBox">
-        {weightValue !== null || cash !== null ? (
+        {weightValue.length !== 0 || cash !== null ? (
           <CalculatedValue
-            weightValue={Number(weightValue)}
+            weightValue={weightValue}
             cash={cash}
             changeCash={changeCash}
             setChangeCash={setChangeCash}
             onClickReset={onClickReset}
+            sum={sum}
           />
         ) : null}
       </section>

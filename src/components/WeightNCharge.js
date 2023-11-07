@@ -7,6 +7,7 @@ import ReceiveCash from "./ReceiveCash";
 
 function WeightNCharge({
   typeChecked,
+  weightValue,
   clickWeightValue,
   setCash,
   onClickReset,
@@ -22,13 +23,21 @@ function WeightNCharge({
         <h4>{typeChecked} 무게</h4>
         <div className="selectBox">
           {typeChecked === "일반우편" ? (
-            <PostWeight clickWeightValue={clickWeightValue} />
+            <PostWeight
+              weightValue={weightValue}
+              clickWeightValue={clickWeightValue}
+            />
           ) : typeChecked === "등기" ? (
-            <RegisterWeight clickWeightValue={clickWeightValue} />
+            <RegisterWeight
+              weightValue={weightValue}
+              clickWeightValue={clickWeightValue}
+            />
           ) : typeChecked === "익일특급" ? (
-            <FastRegisterWeight clickWeightValue={clickWeightValue} />
+            <FastRegisterWeight
+              weightValue={weightValue}
+              clickWeightValue={clickWeightValue}
+            />
           ) : null}
-          <button className="addBtn">+</button>
         </div>
       </section>
       <section className="postCharge">

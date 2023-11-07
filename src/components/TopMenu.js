@@ -15,7 +15,7 @@ function TopMenu({
         onClick={() => {
           setWeightShow(true);
           setTypeChecked("일반우편");
-          setWeightValue(null);
+          setWeightValue([]);
           setCash(null);
           setChangeCash(0);
         }}
@@ -27,7 +27,7 @@ function TopMenu({
         onClick={() => {
           setWeightShow(true);
           setTypeChecked("등기");
-          setWeightValue(null);
+          setWeightValue([]);
           setCash(null);
           setChangeCash(0);
         }}
@@ -39,7 +39,7 @@ function TopMenu({
         onClick={() => {
           setWeightShow(true);
           setTypeChecked("익일특급");
-          setWeightValue(null);
+          setWeightValue([]);
           setCash(null);
           setChangeCash(0);
         }}
