@@ -1,7 +1,7 @@
 import "./style/App.css";
 import TopMenu from "./components/TopMenu";
 import WeightNCharge from "./components/WeightNCharge";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import CalculatedValue from "./components/CalculatedValue";
 
 function App() {
@@ -11,6 +11,8 @@ function App() {
   const [cash, setCash] = useState(null);
   const [changeCash, setChangeCash] = useState(0);
 
+  const weightId = useRef(0);
+
   // 초기화
   const onClickReset = () => {
     setWeightValue([]);
@@ -18,11 +20,13 @@ function App() {
     setTypeChecked("");
     setWeightShow(false);
     setChangeCash(0);
+    weightId.current = 0;
   };
-  console.log(weightValue);
+  // console.log(weightValue);
+  // console.log(weightId);
 
   const sum = weightValue.reduce((acc, currentValue) => {
-    return acc + currentValue;
+    return acc + currentValue.weight;
   }, 0);
 
   return (
@@ -43,17 +47,20 @@ function App() {
           setCash={setCash}
           onClickReset={onClickReset}
           sum={sum}
+          weightId={weightId}
         />
       ) : null}
       <section className="changeCashBox">
         {weightValue.length !== 0 || cash !== null ? (
           <CalculatedValue
             weightValue={weightValue}
+            setWeightValue={setWeightValue}
             cash={cash}
             changeCash={changeCash}
             setChangeCash={setChangeCash}
             onClickReset={onClickReset}
             sum={sum}
+            weightId={weightId}
           />
         ) : null}
       </section>

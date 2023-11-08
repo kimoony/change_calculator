@@ -11,13 +11,14 @@ function WeightNCharge({
   clickWeightValue,
   setCash,
   onClickReset,
+  weightId,
 }) {
   return (
     <section className="postWeightCharge">
       <div className="closeBox">
-        <h2 className="closeBtn" onClick={onClickReset}>
+        <buton className="closeBtn" onClick={onClickReset}>
           x
-        </h2>
+        </buton>
       </div>
       <section className="postWeight">
         <h4>{typeChecked} 무게</h4>
@@ -26,16 +27,19 @@ function WeightNCharge({
             <PostWeight
               weightValue={weightValue}
               clickWeightValue={clickWeightValue}
+              weightId={weightId}
             />
           ) : typeChecked === "등기" ? (
             <RegisterWeight
               weightValue={weightValue}
               clickWeightValue={clickWeightValue}
+              weightId={weightId}
             />
           ) : typeChecked === "익일특급" ? (
             <FastRegisterWeight
               weightValue={weightValue}
               clickWeightValue={clickWeightValue}
+              weightId={weightId}
             />
           ) : null}
         </div>

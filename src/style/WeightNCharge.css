@@ -6,8 +6,15 @@
 .closeBtn {
   margin: 10px 0 20px 0;
   padding: 2.5px 5px;
+  border: none;
+  font-size: 17px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
   &:hover {
-    color: orangered;
+    color: red;
+    background-color: #fff;
+    font-weight: bold;
     cursor: pointer;
   }
 }

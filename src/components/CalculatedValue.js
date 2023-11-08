@@ -2,21 +2,42 @@ import "../style/CalculatedValue.css";
 
 function CalculatedValue({
   weightValue,
+  setWeightValue,
   cash,
   changeCash,
   setChangeCash,
   onClickReset,
   sum,
+  weightId,
 }) {
   const resultValue = () => {
     setChangeCash(cash - sum);
+  };
+
+  const removeWeightValue = (id) => {
+    const newValue = weightValue.filter((it) => it.id !== id);
+    setWeightValue(newValue);
+    weightId.current -= 1;
   };
 
   return (
     <section className="calculatorBox">
       <section className="valueBox">
         <div className="weightValue">
-          <h3>등기비용: {`${weightValue}`} 원</h3>
+          <h3>
+            등기비용:
+            {weightValue.map((it) => (
+              <div key={it.id}>
+                {it.weight} 원
+                <button
+                  className="removeBtn"
+                  onClick={() => removeWeightValue(it.id)}
+                >
+                  x
+                </button>
+              </div>
+            ))}
+          </h3>
           {sum > 0 ? <h3>합계: {sum} 원</h3> : ""}
           {cash !== null ? <h3>받은비용: {cash} 원</h3> : null}
         </div>
