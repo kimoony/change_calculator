@@ -1,14 +1,39 @@
 .cashCharge {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  width: 50%;
 }
-.cashCharge h4 {
+
+.inputValue {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 5px;
+}
+.removeBtn {
+  padding: 2.5px 10px;
+  border: 1px solid #000;
+  font-size: 15px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  margin-left: 10px;
+  &:hover {
+    color: red;
+    border: 1px solid red;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+/* .cashCharge h4 {
   margin-right: 20px;
 }
 .cashCharge div {
   margin-right: 10px;
-}
-#fiveThousand,
+} */
+/* #fiveThousand,
 #tenThousand {
   cursor: pointer;
   border: 1px solid rgb(246, 181, 61);
@@ -20,4 +45,4 @@
     color: #fff;
     transition: all 0.1s ease;
   }
-}
+} */

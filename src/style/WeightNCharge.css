@@ -5,15 +5,15 @@
 }
 .closeBtn {
   margin: 10px 0 20px 0;
-  padding: 2.5px 5px;
-  border: none;
-  font-size: 17px;
-  background-color: #000;
-  color: #fff;
-  border-radius: 50%;
+  padding: 2.5px 10px;
+  border: 1px solid #000;
+  font-size: 20px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
   &:hover {
     color: red;
-    background-color: #fff;
+    border: 1px solid red;
     font-weight: bold;
     cursor: pointer;
   }
@@ -53,7 +53,7 @@
 .postCharge {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   height: auto;
   width: 100%;

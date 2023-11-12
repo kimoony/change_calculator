@@ -10,18 +10,43 @@
 .weightValue > h2 {
   width: 100%;
 }
+.itValue {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.itValue > p {
+  margin-right: 20px;
+}
+.quantity {
+  padding: 0 20px;
+}
 
 .removeBtn {
-  border: none;
+  padding: 2.5px 10px;
+  border: 1px solid #000;
+  font-size: 15px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
   margin-left: 10px;
-  font-size: 17px;
-  background-color: #000;
-  color: #fff;
-  border-radius: 50%;
   &:hover {
     color: red;
-    background-color: #fff;
+    border: 1px solid red;
     font-weight: bold;
+    cursor: pointer;
+  }
+}
+.Btn {
+  border: 1px solid rgb(246, 181, 61);
+  padding: 2.5px 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  &:hover {
+    background-color: rgb(246, 181, 61);
+    color: #fff;
+    transition: all 0.1s ease;
     cursor: pointer;
   }
 }
@@ -33,13 +58,13 @@
 }
 .calculBtn,
 .resetBtn {
-  border: 1px solid rgb(246, 181, 61);
+  border: 1px solid rgb(246, 64, 61);
   padding: 5px 10px;
   font-size: 15px;
   border-radius: 10px;
   background-color: #fff;
   &:hover {
-    background-color: rgb(246, 181, 61);
+    background-color: rgb(246, 70, 61);
     color: #fff;
     transition: all 0.1s ease;
     cursor: pointer;
@@ -52,9 +77,9 @@
 }
 
 .changeCash {
+  width: 100%;
   text-align: center;
   font-size: 40px;
-  background-color: rgb(246, 181, 61);
-  border-radius: 15px;
   padding-top: 5px;
+  color: blue;
 }

@@ -4,14 +4,18 @@ function CalculatedValue({
   weightValue,
   setWeightValue,
   cash,
+  setCash,
   changeCash,
   setChangeCash,
   onClickReset,
   sum,
   weightId,
+  resultValue,
 }) {
-  const resultValue = () => {
-    setChangeCash(cash - sum);
+  const quantityHandler = (id, value) => {
+    const weightValueList = [...weightValue];
+    weightValueList[id].quantity += value;
+    setWeightValue(weightValueList);
   };
 
   const removeWeightValue = (id) => {
@@ -27,8 +31,21 @@ function CalculatedValue({
           <h3>
             등기비용:
             {weightValue.map((it) => (
-              <div key={it.id}>
-                {it.weight} 원
+              <div className="itValue" key={it.id}>
+                <p>{it.weight} 원</p>
+                <button
+                  className="Btn minus"
+                  onClick={() => it.quantity > 1 && quantityHandler(it.id, -1)}
+                >
+                  -
+                </button>
+                <span className="quantity">{it.quantity}</span>
+                <button
+                  className="Btn plus"
+                  onClick={() => quantityHandler(it.id, 1)}
+                >
+                  +
+                </button>
                 <button
                   className="removeBtn"
                   onClick={() => removeWeightValue(it.id)}
@@ -39,7 +56,11 @@ function CalculatedValue({
             ))}
           </h3>
           {sum > 0 ? <h3>합계: {sum} 원</h3> : ""}
-          {cash !== null ? <h3>받은비용: {cash} 원</h3> : null}
+          {cash !== null && weightValue.length !== 0 ? (
+            <h3>받은비용: {cash} 원</h3>
+          ) : (
+            setCash(null) && setChangeCash(0)
+          )}
         </div>
         <div className="calculBox">
           <button className="calculBtn" onClick={resultValue}>
@@ -47,7 +68,9 @@ function CalculatedValue({
           </button>
         </div>
       </section>
-      {changeCash > 0 ? (
+      {weightValue.length === 0 ? (
+        setChangeCash(0)
+      ) : changeCash > 0 ? (
         <div className="resultBox">
           <h1 className="changeCash">{changeCash} 원</h1>
           <div className="resetBox">

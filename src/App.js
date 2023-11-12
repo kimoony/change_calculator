@@ -22,12 +22,16 @@ function App() {
     setChangeCash(0);
     weightId.current = 0;
   };
-  // console.log(weightValue);
-  // console.log(weightId);
+  console.log(weightValue);
 
   const sum = weightValue.reduce((acc, currentValue) => {
-    return acc + currentValue.weight;
+    console.log(currentValue);
+    return (acc + currentValue.weight) * currentValue.quantity;
   }, 0);
+
+  const resultValue = () => {
+    setChangeCash(cash - sum);
+  };
 
   return (
     <section className="mainBox">
@@ -48,6 +52,7 @@ function App() {
           onClickReset={onClickReset}
           sum={sum}
           weightId={weightId}
+          resultValue={resultValue}
         />
       ) : null}
       <section className="changeCashBox">
@@ -56,11 +61,13 @@ function App() {
             weightValue={weightValue}
             setWeightValue={setWeightValue}
             cash={cash}
+            setCash={setCash}
             changeCash={changeCash}
             setChangeCash={setChangeCash}
             onClickReset={onClickReset}
             sum={sum}
             weightId={weightId}
+            resultValue={resultValue}
           />
         ) : null}
       </section>

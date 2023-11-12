@@ -5,6 +5,7 @@ function FastRegisterWeight({ weightValue, clickWeightValue, weightId }) {
     const newWeight = {
       weight: Number(e.target.value),
       id: weightId.current,
+      quantity: 1,
     };
     weightId.current += 1;
     clickWeightValue([...weightValue, newWeight]);

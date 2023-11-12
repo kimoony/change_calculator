@@ -12,6 +12,7 @@ function WeightNCharge({
   setCash,
   onClickReset,
   weightId,
+  resultValue,
 }) {
   return (
     <section className="postWeightCharge">
@@ -45,7 +46,7 @@ function WeightNCharge({
         </div>
       </section>
       <section className="postCharge">
-        <ReceiveCash setCash={setCash} />
+        <ReceiveCash setCash={setCash} resultValue={resultValue} />
       </section>
     </section>
   );

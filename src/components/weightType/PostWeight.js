@@ -1,8 +1,14 @@
 import React from "react";
 
-function PostWeight({ weightValue, clickWeightValue }) {
+function PostWeight({ weightValue, clickWeightValue, weightId }) {
   const onSelect = (e) => {
-    clickWeightValue(weightValue.concat(Number(e.target.value)));
+    const newWeight = {
+      weight: Number(e.target.value),
+      id: weightId.current,
+      quantity: 1,
+    };
+    weightId.current += 1;
+    clickWeightValue([...weightValue, newWeight]);
   };
   return (
     <section>
