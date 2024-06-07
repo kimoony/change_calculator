@@ -26,7 +26,7 @@ function App() {
 
   const sum = weightValue.reduce((acc, currentValue) => {
     console.log(currentValue);
-    return (acc + currentValue.weight) * currentValue.quantity;
+    return (acc + currentValue.price) * currentValue.quantity;
   }, 0);
 
   const resultValue = () => {

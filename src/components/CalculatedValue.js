@@ -32,7 +32,7 @@ function CalculatedValue({
             등기비용:
             {weightValue.map((it) => (
               <div className="itValue" key={it.id}>
-                <p>{it.weight} 원</p>
+                <p>{it.price.toLocaleString("ko-KR")} 원</p>
                 <button
                   className="Btn minus"
                   onClick={() => it.quantity > 1 && quantityHandler(it.id, -1)}
@@ -55,9 +55,9 @@ function CalculatedValue({
               </div>
             ))}
           </h3>
-          {sum > 0 ? <h3>합계: {sum} 원</h3> : ""}
+          {sum > 0 ? <h3>합계: {sum.toLocaleString("ko-KR")} 원</h3> : ""}
           {cash !== null && weightValue.length !== 0 ? (
-            <h3>받은비용: {cash} 원</h3>
+            <h3>받은비용: {cash.toLocaleString("ko-KR")} 원</h3>
           ) : (
             setCash(null) && setChangeCash(0)
           )}
@@ -72,7 +72,9 @@ function CalculatedValue({
         setChangeCash(0)
       ) : changeCash > 0 ? (
         <div className="resultBox">
-          <h1 className="changeCash">{changeCash} 원</h1>
+          <h1 className="changeCash">
+            {changeCash.toLocaleString("ko-KR")} 원
+          </h1>
           <div className="resetBox">
             <button className="resetBtn" onClick={onClickReset}>
               초기화
