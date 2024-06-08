@@ -1,13 +1,12 @@
-import React, { useState } from "react";
-
 function FastRegisterWeight({
   weightValue,
   clickWeightValue,
   weightId,
   resultValue,
   isChecked,
+  inputWeight,
+  setInputWeight,
 }) {
-  const [inputWeight, setInputWeight] = useState();
   const onChangeValue = (e) => {
     setInputWeight(e.target.value);
   };

@@ -1,48 +1,358 @@
 import React from "react";
 
-function RegisterWeight({ weightValue, clickWeightValue, weightId }) {
-  const onSelect = (e) => {
-    const newWeight = {
-      weight: Number(e.target.value),
-      id: weightId.current,
-      quantity: 1,
-    };
-    weightId.current += 1;
-    clickWeightValue([...weightValue, newWeight]);
+function RegisterWeight({
+  weightValue,
+  clickWeightValue,
+  weightId,
+  resultValue,
+  isChecked,
+  inputWeight,
+  setInputWeight,
+}) {
+  const onChangeValue = (e) => {
+    setInputWeight(e.target.value);
+  };
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    // weight if
+    if (isChecked === true && inputWeight <= 50) {
+      const newWeight = {
+        id: weightId.current,
+        tNf: isChecked,
+        weight: Number(inputWeight),
+        price: 2620,
+        quantity: 1,
+      };
+      weightId.current += 1;
+      clickWeightValue([...weightValue, newWeight]);
+      console.log(newWeight);
+      setInputWeight("");
+    } else if (inputWeight <= 5) {
+      const newWeight = {
+        id: weightId.current,
+        tNf: isChecked,
+        weight: Number(inputWeight),
+        price: 2500,
+        quantity: 1,
+      };
+      weightId.current += 1;
+      clickWeightValue([...weightValue, newWeight]);
+      console.log(newWeight);
+      setInputWeight("");
+    } else if (inputWeight < 26) {
+      const newWeight = {
+        id: weightId.current,
+        tNf: isChecked,
+        weight: Number(inputWeight),
+        price: 2530,
+        quantity: 1,
+      };
+      weightId.current += 1;
+      clickWeightValue([...weightValue, newWeight]);
+      console.log(newWeight);
+      setInputWeight("");
+    } else if (inputWeight < 51) {
+      const newWeight = {
+        id: weightId.current,
+        tNf: isChecked,
+        weight: Number(inputWeight),
+        price: 2550,
+        quantity: 1,
+      };
+      weightId.current += 1;
+      clickWeightValue([...weightValue, newWeight]);
+      console.log(newWeight);
+      setInputWeight("");
+    } else if (inputWeight < 101) {
+      const newWeight = {
+        id: weightId.current,
+        tNf: isChecked,
+        weight: Number(inputWeight),
+        price: 2740,
+        quantity: 1,
+      };
+      weightId.current += 1;
+      clickWeightValue([...weightValue, newWeight]);
+      console.log(newWeight);
+      setInputWeight("");
+    } else if (inputWeight < 151) {
+      const newWeight = {
+        id: weightId.current,
+        tNf: isChecked,
+        weight: Number(inputWeight),
+        price: 2860,
+        quantity: 1,
+      };
+      weightId.current += 1;
+      clickWeightValue([...weightValue, newWeight]);
+      console.log(newWeight);
+      setInputWeight("");
+    } else if (inputWeight < 201) {
+      const newWeight = {
+        id: weightId.current,
+        tNf: isChecked,
+        weight: Number(inputWeight),
+        price: 2980,
+        quantity: 1,
+      };
+      weightId.current += 1;
+      clickWeightValue([...weightValue, newWeight]);
+      console.log(newWeight);
+      setInputWeight("");
+    } else if (inputWeight < 251) {
+      const newWeight = {
+        id: weightId.current,
+        tNf: isChecked,
+        weight: Number(inputWeight),
+        price: 3100,
+        quantity: 1,
+      };
+      weightId.current += 1;
+      clickWeightValue([...weightValue, newWeight]);
+      console.log(newWeight);
+      setInputWeight("");
+    } else if (inputWeight < 301) {
+      const newWeight = {
+        id: weightId.current,
+        tNf: isChecked,
+        weight: Number(inputWeight),
+        price: 3220,
+        quantity: 1,
+      };
+      weightId.current += 1;
+      clickWeightValue([...weightValue, newWeight]);
+      console.log(newWeight);
+      setInputWeight("");
+    } else if (inputWeight < 351) {
+      const newWeight = {
+        id: weightId.current,
+        tNf: isChecked,
+        weight: Number(inputWeight),
+        price: 3340,
+        quantity: 1,
+      };
+      weightId.current += 1;
+      clickWeightValue([...weightValue, newWeight]);
+      console.log(newWeight);
+      setInputWeight("");
+    } else if (inputWeight < 401) {
+      const newWeight = {
+        id: weightId.current,
+        tNf: isChecked,
+        weight: Number(inputWeight),
+        price: 3460,
+        quantity: 1,
+      };
+      weightId.current += 1;
+      clickWeightValue([...weightValue, newWeight]);
+      console.log(newWeight);
+      setInputWeight("");
+    } else if (inputWeight < 451) {
+      const newWeight = {
+        id: weightId.current,
+        tNf: isChecked,
+        weight: Number(inputWeight),
+        price: 3580,
+        quantity: 1,
+      };
+      weightId.current += 1;
+      clickWeightValue([...weightValue, newWeight]);
+      console.log(newWeight);
+      setInputWeight("");
+    } else if (inputWeight < 501) {
+      const newWeight = {
+        id: weightId.current,
+        tNf: isChecked,
+        weight: Number(inputWeight),
+        price: 3700,
+        quantity: 1,
+      };
+      weightId.current += 1;
+      clickWeightValue([...weightValue, newWeight]);
+      console.log(newWeight);
+      setInputWeight("");
+    } else if (inputWeight < 551) {
+      const newWeight = {
+        id: weightId.current,
+        tNf: isChecked,
+        weight: Number(inputWeight),
+        price: 3820,
+        quantity: 1,
+      };
+      weightId.current += 1;
+      clickWeightValue([...weightValue, newWeight]);
+      console.log(newWeight);
+      setInputWeight("");
+    } else if (inputWeight < 601) {
+      const newWeight = {
+        id: weightId.current,
+        tNf: isChecked,
+        weight: Number(inputWeight),
+        price: 3940,
+        quantity: 1,
+      };
+      weightId.current += 1;
+      clickWeightValue([...weightValue, newWeight]);
+      console.log(newWeight);
+      setInputWeight("");
+    } else if (inputWeight < 651) {
+      const newWeight = {
+        id: weightId.current,
+        tNf: isChecked,
+        weight: Number(inputWeight),
+        price: 4060,
+        quantity: 1,
+      };
+      weightId.current += 1;
+      clickWeightValue([...weightValue, newWeight]);
+      console.log(newWeight);
+      setInputWeight("");
+    } else if (inputWeight < 701) {
+      const newWeight = {
+        id: weightId.current,
+        tNf: isChecked,
+        weight: Number(inputWeight),
+        price: 4180,
+        quantity: 1,
+      };
+      weightId.current += 1;
+      clickWeightValue([...weightValue, newWeight]);
+      console.log(newWeight);
+      setInputWeight("");
+    } else if (inputWeight < 751) {
+      const newWeight = {
+        id: weightId.current,
+        tNf: isChecked,
+        weight: Number(inputWeight),
+        price: 4300,
+        quantity: 1,
+      };
+      weightId.current += 1;
+      clickWeightValue([...weightValue, newWeight]);
+      console.log(newWeight);
+      setInputWeight("");
+    } else if (inputWeight < 801) {
+      const newWeight = {
+        id: weightId.current,
+        tNf: isChecked,
+        weight: Number(inputWeight),
+        price: 4420,
+        quantity: 1,
+      };
+      weightId.current += 1;
+      clickWeightValue([...weightValue, newWeight]);
+      console.log(newWeight);
+      setInputWeight("");
+    } else if (inputWeight < 851) {
+      const newWeight = {
+        id: weightId.current,
+        tNf: isChecked,
+        weight: Number(inputWeight),
+        price: 4540,
+        quantity: 1,
+      };
+      weightId.current += 1;
+      clickWeightValue([...weightValue, newWeight]);
+      console.log(newWeight);
+      setInputWeight("");
+    } else if (inputWeight < 901) {
+      const newWeight = {
+        id: weightId.current,
+        tNf: isChecked,
+        weight: Number(inputWeight),
+        price: 4660,
+        quantity: 1,
+      };
+      weightId.current += 1;
+      clickWeightValue([...weightValue, newWeight]);
+      console.log(newWeight);
+      setInputWeight("");
+    } else if (inputWeight < 951) {
+      const newWeight = {
+        id: weightId.current,
+        tNf: isChecked,
+        weight: Number(inputWeight),
+        price: 4780,
+        quantity: 1,
+      };
+      weightId.current += 1;
+      clickWeightValue([...weightValue, newWeight]);
+      console.log(newWeight);
+      setInputWeight("");
+    } else if (inputWeight < 1001) {
+      const newWeight = {
+        id: weightId.current,
+        tNf: isChecked,
+        weight: Number(inputWeight),
+        price: 4900,
+        quantity: 1,
+      };
+      weightId.current += 1;
+      clickWeightValue([...weightValue, newWeight]);
+      console.log(newWeight);
+      setInputWeight("");
+    } else if (inputWeight < 1201) {
+      const newWeight = {
+        id: weightId.current,
+        tNf: isChecked,
+        weight: Number(inputWeight),
+        price: 5020,
+        quantity: 1,
+      };
+      weightId.current += 1;
+      clickWeightValue([...weightValue, newWeight]);
+      console.log(newWeight);
+      setInputWeight("");
+    } else if (inputWeight < 1401) {
+      const newWeight = {
+        id: weightId.current,
+        tNf: isChecked,
+        weight: Number(inputWeight),
+        price: 5140,
+        quantity: 1,
+      };
+      weightId.current += 1;
+      clickWeightValue([...weightValue, newWeight]);
+      console.log(newWeight);
+      setInputWeight("");
+    } else if (inputWeight < 1601) {
+      const newWeight = {
+        id: weightId.current,
+        tNf: isChecked,
+        weight: Number(inputWeight),
+        price: 5260,
+        quantity: 1,
+      };
+      weightId.current += 1;
+      clickWeightValue([...weightValue, newWeight]);
+      console.log(newWeight);
+      setInputWeight("");
+    } else if (inputWeight < 1801) {
+      const newWeight = {
+        id: weightId.current,
+        tNf: isChecked,
+        weight: Number(inputWeight),
+        price: 5380,
+        quantity: 1,
+      };
+      weightId.current += 1;
+      clickWeightValue([...weightValue, newWeight]);
+      console.log(newWeight);
+      setInputWeight("");
+    }
+    console.log(inputWeight);
   };
   return (
-    <section>
-      <select name="weight" id="weight" onChange={onSelect}>
-        <option value="">선택</option>
-        <option value="2500">5g 규격</option>
-        <option value="2530">25g 규격</option>
-        <option value="2550">50g 구격</option>
-        <option value="2620">50g 규격 외</option>
-        <option value="2740">100g</option>
-        <option value="2860">150g</option>
-        <option value="2980">200g</option>
-        <option value="3100">250g</option>
-        <option value="3220">300g</option>
-        <option value="3340">350g</option>
-        <option value="3460">400g</option>
-        <option value="3580">450g</option>
-        <option value="3700">500g</option>
-        <option value="3820">550g</option>
-        <option value="3940">600g</option>
-        <option value="4060">650g</option>
-        <option value="4180">700g</option>
-        <option value="4300">750g</option>
-        <option value="4420">800g</option>
-        <option value="4540">850g</option>
-        <option value="4660">900g</option>
-        <option value="4780">950g</option>
-        <option value="4900">1000g</option>
-        <option value="5020">1200g</option>
-        <option value="5140">1400g</option>
-        <option value="5260">1600g</option>
-        <option value="5380">1800g</option>
-      </select>
-    </section>
+    <form onSubmit={onSubmit}>
+      <input
+        type="number"
+        value={inputWeight}
+        onChange={onChangeValue}
+        onKeyDown={(e) => e.key === "Enter" && resultValue()}
+      />
+      <button type="submit">입력</button>
+    </form>
   );
 }
 

@@ -16,6 +16,7 @@ function WeightNCharge({
   resultValue,
 }) {
   const [isChecked, setIsChecked] = useState(false);
+  const [inputWeight, setInputWeight] = useState();
   const checkboxHandler = () => {
     setIsChecked(!isChecked);
   };
@@ -44,12 +45,20 @@ function WeightNCharge({
               weightValue={weightValue}
               clickWeightValue={clickWeightValue}
               weightId={weightId}
+              resultValue={resultValue}
+              isChecked={isChecked}
+              inputWeight={inputWeight}
+              setInputWeight={setInputWeight}
             />
           ) : typeChecked === "등기" ? (
             <RegisterWeight
               weightValue={weightValue}
               clickWeightValue={clickWeightValue}
               weightId={weightId}
+              resultValue={resultValue}
+              isChecked={isChecked}
+              inputWeight={inputWeight}
+              setInputWeight={setInputWeight}
             />
           ) : typeChecked === "익일특급" ? (
             <NewFastRegisterWeight
@@ -58,6 +67,8 @@ function WeightNCharge({
               weightId={weightId}
               resultValue={resultValue}
               isChecked={isChecked}
+              inputWeight={inputWeight}
+              setInputWeight={setInputWeight}
             />
           ) : null}
         </div>
