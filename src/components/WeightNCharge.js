@@ -30,15 +30,15 @@ function WeightNCharge({
       </div>
       <section className="postWeight">
         <div className="selectBox">
+          <h4>{typeChecked} 무게</h4>
           <input
             type="checkbox"
             name="Out of standard"
             id="1"
             onChange={checkboxHandler}
           />
-          <p>규격 외</p>
+          <p>규격</p>
         </div>
-        <h4>{typeChecked} 무게</h4>
         <div className="selectBox">
           {typeChecked === "일반우편" ? (
             <PostWeight

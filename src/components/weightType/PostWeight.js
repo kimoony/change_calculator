@@ -16,19 +16,7 @@ function PostWeight({
   const onSubmit = (e) => {
     e.preventDefault();
     // weight if
-    if (isChecked === true && inputWeight <= 50) {
-      const newWeight = {
-        id: weightId.current,
-        tNf: isChecked,
-        weight: Number(inputWeight),
-        price: 520,
-        quantity: 1,
-      };
-      weightId.current += 1;
-      clickWeightValue([...weightValue, newWeight]);
-      console.log(newWeight);
-      setInputWeight("");
-    } else if (inputWeight <= 5) {
+    if (isChecked === true && inputWeight <= 5) {
       const newWeight = {
         id: weightId.current,
         tNf: isChecked,
@@ -40,7 +28,7 @@ function PostWeight({
       clickWeightValue([...weightValue, newWeight]);
       console.log(newWeight);
       setInputWeight("");
-    } else if (inputWeight < 26) {
+    } else if (isChecked === true && inputWeight <= 25) {
       const newWeight = {
         id: weightId.current,
         tNf: isChecked,
@@ -52,12 +40,24 @@ function PostWeight({
       clickWeightValue([...weightValue, newWeight]);
       console.log(newWeight);
       setInputWeight("");
-    } else if (inputWeight < 51) {
+    } else if (isChecked === true && inputWeight <= 50) {
       const newWeight = {
         id: weightId.current,
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 450,
+        quantity: 1,
+      };
+      weightId.current += 1;
+      clickWeightValue([...weightValue, newWeight]);
+      console.log(newWeight);
+      setInputWeight("");
+    } else if (inputWeight < 51) {
+      const newWeight = {
+        id: weightId.current,
+        tNf: isChecked,
+        weight: Number(inputWeight),
+        price: 520,
         quantity: 1,
       };
       weightId.current += 1;
@@ -328,7 +328,7 @@ function PostWeight({
       clickWeightValue([...weightValue, newWeight]);
       console.log(newWeight);
       setInputWeight("");
-    } else if (inputWeight < 1801) {
+    } else if (1600 < inputWeight) {
       const newWeight = {
         id: weightId.current,
         tNf: isChecked,
