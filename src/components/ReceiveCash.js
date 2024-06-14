@@ -9,7 +9,7 @@ function ReceiveCash({ setCash, resultValue }) {
         <input
           type="number"
           className="inputValue"
-          placeholder="직접입력"
+          placeholder="받은금액입력"
           onChange={onChaneValue}
           onKeyDown={(e) => e.key === "Enter" && resultValue()}
         />

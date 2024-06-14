@@ -1,3 +1,30 @@
+.postBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 800px;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 0px 20px 20px 0px;
+}
+.middleBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.sumNchangeCash {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.sum {
+  color: aquamarine;
+}
+.cash {
+  color: orange;
+}
+
 .closeBox {
   width: 100%;
   display: flex;
@@ -12,7 +39,8 @@
   color: #000;
   border-radius: 10px;
   &:hover {
-    color: red;
+    color: #fff;
+    background-color: red;
     border: 1px solid red;
     font-weight: bold;
     cursor: pointer;
@@ -21,29 +49,31 @@
 
 .postWeightCharge {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: auto;
-  width: 70%;
-  border: 1px solid #aaa;
+  justify-content: space-around;
+  height: 40vh;
+  width: 100%;
   border-radius: 20px;
-  margin-top: 20px;
-  padding: 0 20px;
+  padding: 20px 15px;
+  color: #fff;
+  border: 1px solid #ccc;
 }
 .postWeight {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-left: 0px;
   height: auto;
   width: 100%;
-  margin-top: -30px;
+  color: #fff;
 }
 .postWeight h4 {
   margin-right: 28px;
 }
 .selectBox {
   display: flex;
+}
+.selectBox p {
+  margin-top: 22px;
 }
 #weight {
   width: 120px;
@@ -52,10 +82,8 @@
 
 .postCharge {
   display: flex;
-  flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
   height: auto;
   width: 100%;
-  padding: 10px 0 20px 0;
+  margin-top: 20px;
 }

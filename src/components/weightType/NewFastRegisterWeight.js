@@ -1,3 +1,5 @@
+import "../../style/weightType/NewFastRegisterWeight.css";
+
 function FastRegisterWeight({
   weightValue,
   clickWeightValue,
@@ -345,11 +347,15 @@ function FastRegisterWeight({
     <form onSubmit={onSubmit}>
       <input
         type="number"
+        className="weightNum"
         value={inputWeight}
         onChange={onChangeValue}
+        placeholder="무게입력"
         onKeyDown={(e) => e.key === "Enter" && resultValue()}
       />
-      <button type="submit">입력</button>
+      {/* <button className="weightBtn" type="submit">
+        입력
+      </button> */}
     </form>
   );
 }

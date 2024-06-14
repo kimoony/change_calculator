@@ -1,4 +1,5 @@
 import React from "react";
+import "../../style/weightType/postWeight.css";
 
 function PostWeight({
   weightValue,
@@ -347,11 +348,15 @@ function PostWeight({
     <form onSubmit={onSubmit}>
       <input
         type="number"
+        className="weightNum"
         value={inputWeight}
         onChange={onChangeValue}
+        placeholder="무게입력"
         onKeyDown={(e) => e.key === "Enter" && resultValue()}
       />
-      <button type="submit">입력</button>
+      {/* <button className="weightBtn" type="submit">
+        입력
+      </button> */}
     </form>
   );
 }

@@ -1,9 +1,17 @@
+body {
+  background-color: rgb(33, 32, 32);
+}
+
 .mainBox {
   margin-top: 10px;
-  width: 340px;
-  height: 500px;
+  width: auto;
+  height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
   transition: all 0.5s ease;
+}
+.title {
+  font-size: 55px;
+  color: #fff;
 }

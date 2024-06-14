@@ -35,7 +35,7 @@ function App() {
 
   return (
     <section className="mainBox">
-      <h1>등기 거스름돈 계산기</h1>
+      <h1 className="title">등기 거스름돈 계산기</h1>
       <TopMenu
         setWeightShow={setWeightShow}
         setTypeChecked={setTypeChecked}
@@ -48,11 +48,13 @@ function App() {
           typeChecked={typeChecked}
           weightValue={weightValue}
           clickWeightValue={setWeightValue}
+          cash={cash}
           setCash={setCash}
           onClickReset={onClickReset}
           sum={sum}
           weightId={weightId}
           resultValue={resultValue}
+          changeCash={changeCash}
         />
       ) : null}
       <section className="changeCashBox">
