@@ -16,13 +16,13 @@
 .sumNchangeCash {
   width: 60%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .sum {
-  color: aquamarine;
+  color: orange;
 }
 .cash {
-  color: orange;
+  color: aquamarine;
 }
 
 .closeBox {
@@ -33,7 +33,6 @@
 .closeBtn {
   margin: 10px 0 20px 0;
   padding: 2.5px 10px;
-  border: 1px solid #000;
   font-size: 20px;
   background-color: #fff;
   color: #000;
@@ -41,7 +40,6 @@
   &:hover {
     color: #fff;
     background-color: red;
-    border: 1px solid red;
     font-weight: bold;
     cursor: pointer;
   }
@@ -49,14 +47,19 @@
 
 .postWeightCharge {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   height: 40vh;
   width: 100%;
-  border-radius: 20px;
   padding: 20px 15px;
   color: #fff;
-  border: 1px solid #ccc;
+  border-top: 1px solid #ccc;
 }
+
+.inputWeightCharge {
+  display: flex;
+  justify-content: space-around;
+}
+
 .postWeight {
   display: flex;
   flex-direction: column;
@@ -75,6 +78,9 @@
 .selectBox p {
   margin-top: 22px;
 }
+.checkBox {
+  margin-left: 80px;
+}
 #weight {
   width: 120px;
   height: 25px;
@@ -83,7 +89,12 @@
 .postCharge {
   display: flex;
   justify-content: center;
-  height: auto;
   width: 100%;
   margin-top: 20px;
+}
+
+.calculatorBox {
+  height: 300px;
+  width: 100%;
+  display: flex;
 }

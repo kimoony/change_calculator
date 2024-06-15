@@ -3,14 +3,8 @@ import "../style/CalculatedValue.css";
 function CalculatedValue({
   weightValue,
   setWeightValue,
-  cash,
-  setCash,
-  changeCash,
-  setChangeCash,
-  onClickReset,
-  sum,
   weightId,
-  resultValue,
+  inputWeight,
 }) {
   const quantityHandler = (id, value) => {
     const weightValueList = [...weightValue];
@@ -29,9 +23,9 @@ function CalculatedValue({
       <section className="valueBox">
         <div className="weightValue">
           <h3>
-            등기비용:
             {weightValue.map((it) => (
               <div className="itValue" key={it.id}>
+                <p>{it.weight}g</p>
                 <p>{it.price.toLocaleString("ko-KR")} 원</p>
                 <button
                   className="Btn minus"
@@ -55,39 +49,8 @@ function CalculatedValue({
               </div>
             ))}
           </h3>
-          {sum > 0 ? <h3>합계: {sum.toLocaleString("ko-KR")} 원</h3> : ""}
-          {cash !== null && weightValue.length !== 0 ? (
-            <h3>받은비용: {cash.toLocaleString("ko-KR")} 원</h3>
-          ) : (
-            setCash(null) && setChangeCash(0)
-          )}
-        </div>
-        <div className="calculBox">
-          <button className="calculBtn" onClick={resultValue}>
-            계산
-          </button>
         </div>
       </section>
-      {weightValue.length === 0 ? (
-        setChangeCash(0)
-      ) : changeCash > 0 ? (
-        <div className="resultBox">
-          <h1 className="changeCash">
-            {changeCash.toLocaleString("ko-KR")} 원
-          </h1>
-          <div className="resetBox">
-            <button className="resetBtn" onClick={onClickReset}>
-              초기화
-            </button>
-          </div>
-        </div>
-      ) : cash < sum ? (
-        <h2 style={{ color: "red", fontWeight: "bold" }}>
-          합계보다 받은 돈이 적습니다!
-        </h2>
-      ) : (
-        ""
-      )}
     </section>
   );
 }

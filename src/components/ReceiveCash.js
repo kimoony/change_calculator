@@ -3,7 +3,7 @@ import "../style/ReceiveCash.css";
 function ReceiveCash({ setCash, resultValue }) {
   const onChaneValue = (e) => setCash(e.target.value);
   return (
-    <div>
+    <section>
       <div className="cashCharge">
         <h4>받은 돈</h4>
         <input
@@ -14,7 +14,7 @@ function ReceiveCash({ setCash, resultValue }) {
           onKeyDown={(e) => e.key === "Enter" && resultValue()}
         />
       </div>
-    </div>
+    </section>
   );
 }
 

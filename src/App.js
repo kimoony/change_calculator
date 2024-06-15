@@ -2,7 +2,7 @@ import "./style/App.css";
 import TopMenu from "./components/TopMenu";
 import WeightNCharge from "./components/WeightNCharge";
 import { useRef, useState } from "react";
-import CalculatedValue from "./components/CalculatedValue";
+// import CalculatedValue from "./components/CalculatedValue";
 
 function App() {
   const [weightShow, setWeightShow] = useState(false);
@@ -55,9 +55,10 @@ function App() {
           weightId={weightId}
           resultValue={resultValue}
           changeCash={changeCash}
+          setChangeCash={setChangeCash}
         />
       ) : null}
-      <section className="changeCashBox">
+      {/* <section className="changeCashBox">
         {weightValue.length !== 0 || cash !== null ? (
           <CalculatedValue
             weightValue={weightValue}
@@ -72,7 +73,7 @@ function App() {
             resultValue={resultValue}
           />
         ) : null}
-      </section>
+      </section> */}
     </section>
   );
 }

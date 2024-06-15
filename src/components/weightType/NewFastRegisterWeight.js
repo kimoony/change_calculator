@@ -20,7 +20,7 @@ function FastRegisterWeight({
       const newWeight = {
         id: weightId.current,
         tNf: isChecked,
-        weight: Number(inputWeight),
+        weight: "규격 5",
         price: 3500,
         quantity: 1,
       };
@@ -32,7 +32,7 @@ function FastRegisterWeight({
       const newWeight = {
         id: weightId.current,
         tNf: isChecked,
-        weight: Number(inputWeight),
+        weight: "규격 25",
         price: 3530,
         quantity: 1,
       };
@@ -44,7 +44,7 @@ function FastRegisterWeight({
       const newWeight = {
         id: weightId.current,
         tNf: isChecked,
-        weight: Number(inputWeight),
+        weight: "규격 50",
         price: 3550,
         quantity: 1,
       };
@@ -56,7 +56,7 @@ function FastRegisterWeight({
       const newWeight = {
         id: weightId.current,
         tNf: isChecked,
-        weight: Number(inputWeight),
+        weight: 50,
         price: 3620,
         quantity: 1,
       };
@@ -68,7 +68,7 @@ function FastRegisterWeight({
       const newWeight = {
         id: weightId.current,
         tNf: isChecked,
-        weight: Number(inputWeight),
+        weight: 100,
         price: 3740,
         quantity: 1,
       };
@@ -80,7 +80,7 @@ function FastRegisterWeight({
       const newWeight = {
         id: weightId.current,
         tNf: isChecked,
-        weight: Number(inputWeight),
+        weight: 150,
         price: 3860,
         quantity: 1,
       };
@@ -92,7 +92,7 @@ function FastRegisterWeight({
       const newWeight = {
         id: weightId.current,
         tNf: isChecked,
-        weight: Number(inputWeight),
+        weight: 200,
         price: 3980,
         quantity: 1,
       };
@@ -104,7 +104,7 @@ function FastRegisterWeight({
       const newWeight = {
         id: weightId.current,
         tNf: isChecked,
-        weight: Number(inputWeight),
+        weight: 250,
         price: 4100,
         quantity: 1,
       };
@@ -116,7 +116,7 @@ function FastRegisterWeight({
       const newWeight = {
         id: weightId.current,
         tNf: isChecked,
-        weight: Number(inputWeight),
+        weight: 300,
         price: 4220,
         quantity: 1,
       };
@@ -128,7 +128,7 @@ function FastRegisterWeight({
       const newWeight = {
         id: weightId.current,
         tNf: isChecked,
-        weight: Number(inputWeight),
+        weight: 350,
         price: 4340,
         quantity: 1,
       };
@@ -140,7 +140,7 @@ function FastRegisterWeight({
       const newWeight = {
         id: weightId.current,
         tNf: isChecked,
-        weight: Number(inputWeight),
+        weight: 400,
         price: 4460,
         quantity: 1,
       };
@@ -152,7 +152,7 @@ function FastRegisterWeight({
       const newWeight = {
         id: weightId.current,
         tNf: isChecked,
-        weight: Number(inputWeight),
+        weight: 450,
         price: 4580,
         quantity: 1,
       };
@@ -164,7 +164,7 @@ function FastRegisterWeight({
       const newWeight = {
         id: weightId.current,
         tNf: isChecked,
-        weight: Number(inputWeight),
+        weight: 500,
         price: 4700,
         quantity: 1,
       };
@@ -176,7 +176,7 @@ function FastRegisterWeight({
       const newWeight = {
         id: weightId.current,
         tNf: isChecked,
-        weight: Number(inputWeight),
+        weight: 550,
         price: 4820,
         quantity: 1,
       };
@@ -188,7 +188,7 @@ function FastRegisterWeight({
       const newWeight = {
         id: weightId.current,
         tNf: isChecked,
-        weight: Number(inputWeight),
+        weight: 600,
         price: 4940,
         quantity: 1,
       };
@@ -200,7 +200,7 @@ function FastRegisterWeight({
       const newWeight = {
         id: weightId.current,
         tNf: isChecked,
-        weight: Number(inputWeight),
+        weight: 650,
         price: 5060,
         quantity: 1,
       };
@@ -212,7 +212,7 @@ function FastRegisterWeight({
       const newWeight = {
         id: weightId.current,
         tNf: isChecked,
-        weight: Number(inputWeight),
+        weight: 700,
         price: 5180,
         quantity: 1,
       };
@@ -224,7 +224,7 @@ function FastRegisterWeight({
       const newWeight = {
         id: weightId.current,
         tNf: isChecked,
-        weight: Number(inputWeight),
+        weight: 750,
         price: 5300,
         quantity: 1,
       };
@@ -236,7 +236,7 @@ function FastRegisterWeight({
       const newWeight = {
         id: weightId.current,
         tNf: isChecked,
-        weight: Number(inputWeight),
+        weight: 800,
         price: 5420,
         quantity: 1,
       };
@@ -248,7 +248,7 @@ function FastRegisterWeight({
       const newWeight = {
         id: weightId.current,
         tNf: isChecked,
-        weight: Number(inputWeight),
+        weight: 850,
         price: 5540,
         quantity: 1,
       };
@@ -260,7 +260,7 @@ function FastRegisterWeight({
       const newWeight = {
         id: weightId.current,
         tNf: isChecked,
-        weight: Number(inputWeight),
+        weight: 900,
         price: 5660,
         quantity: 1,
       };
@@ -272,7 +272,7 @@ function FastRegisterWeight({
       const newWeight = {
         id: weightId.current,
         tNf: isChecked,
-        weight: Number(inputWeight),
+        weight: 950,
         price: 5780,
         quantity: 1,
       };
@@ -284,7 +284,7 @@ function FastRegisterWeight({
       const newWeight = {
         id: weightId.current,
         tNf: isChecked,
-        weight: Number(inputWeight),
+        weight: 1000,
         price: 5900,
         quantity: 1,
       };
@@ -296,7 +296,7 @@ function FastRegisterWeight({
       const newWeight = {
         id: weightId.current,
         tNf: isChecked,
-        weight: Number(inputWeight),
+        weight: 1200,
         price: 6020,
         quantity: 1,
       };
@@ -308,7 +308,7 @@ function FastRegisterWeight({
       const newWeight = {
         id: weightId.current,
         tNf: isChecked,
-        weight: Number(inputWeight),
+        weight: 1400,
         price: 6140,
         quantity: 1,
       };
@@ -320,7 +320,7 @@ function FastRegisterWeight({
       const newWeight = {
         id: weightId.current,
         tNf: isChecked,
-        weight: Number(inputWeight),
+        weight: 1600,
         price: 6260,
         quantity: 1,
       };
@@ -332,7 +332,7 @@ function FastRegisterWeight({
       const newWeight = {
         id: weightId.current,
         tNf: isChecked,
-        weight: Number(inputWeight),
+        weight: "1800",
         price: 6380,
         quantity: 1,
       };
@@ -341,7 +341,6 @@ function FastRegisterWeight({
       console.log(newWeight);
       setInputWeight("");
     }
-    console.log(inputWeight);
   };
   return (
     <form onSubmit={onSubmit}>
@@ -353,9 +352,6 @@ function FastRegisterWeight({
         placeholder="무게입력"
         onKeyDown={(e) => e.key === "Enter" && resultValue()}
       />
-      {/* <button className="weightBtn" type="submit">
-        입력
-      </button> */}
     </form>
   );
 }
