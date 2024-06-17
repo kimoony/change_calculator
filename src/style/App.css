@@ -1,6 +1,9 @@
 body {
   background-color: rgb(33, 32, 32);
 }
+.title {
+  cursor: pointer;
+}
 
 .mainBox {
   margin-top: 10px;

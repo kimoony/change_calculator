@@ -62,7 +62,7 @@ function WeightNCharge({
               <p>규격</p>
             </div>
             <div className="selectBox">
-              {typeChecked === "익일특급" ? (
+              {typeChecked === "익일" ? (
                 <NewFastRegisterWeight
                   weightValue={weightValue}
                   clickWeightValue={clickWeightValue}
@@ -82,7 +82,7 @@ function WeightNCharge({
                   inputWeight={inputWeight}
                   setInputWeight={setInputWeight}
                 />
-              ) : typeChecked === "일반우편" ? (
+              ) : typeChecked === "일반" ? (
                 <PostWeight
                   weightValue={weightValue}
                   clickWeightValue={clickWeightValue}

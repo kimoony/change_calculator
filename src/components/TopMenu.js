@@ -16,7 +16,7 @@ function TopMenu({
         className="type"
         onClick={() => {
           setWeightShow(true);
-          setTypeChecked("익일특급");
+          setTypeChecked("익일");
         }}
       >
         익일특급
@@ -34,7 +34,7 @@ function TopMenu({
         className="type"
         onClick={() => {
           setWeightShow(true);
-          setTypeChecked("일반우편");
+          setTypeChecked("일반");
         }}
       >
         일반우편

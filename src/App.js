@@ -5,13 +5,14 @@ import { useRef, useState } from "react";
 // import CalculatedValue from "./components/CalculatedValue";
 
 function App() {
-  const [weightShow, setWeightShow] = useState(false);
+  const [weightShow, setWeightShow] = useState(true);
   const [typeChecked, setTypeChecked] = useState("익일");
   const [weightValue, setWeightValue] = useState([]);
   const [cash, setCash] = useState(null);
   const [changeCash, setChangeCash] = useState(0);
 
   const weightId = useRef(0);
+  console.log(typeChecked);
 
   // 초기화
   const onClickReset = () => {
@@ -46,7 +47,9 @@ function App() {
   console.log(typeChecked);
   return (
     <section className="mainBox">
-      <h1 className="title">등기 거스름돈 계산기</h1>
+      <h1 className="title" onClick={onClickReset}>
+        등기 거스름돈 계산기
+      </h1>
       <TopMenu
         setWeightShow={setWeightShow}
         setTypeChecked={setTypeChecked}
