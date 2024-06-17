@@ -1,6 +1,25 @@
 .valueBox {
   display: flex;
   width: 100%;
+  flex-direction: column;
+}
+.resetBtn {
+  width: 60px;
+  height: 40px;
+  align-self: flex-end;
+  border: 1px solid rgb(246, 64, 61);
+  padding: 10px 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-top: 20px;
+  &:hover {
+    color: #fff;
+    background-color: red;
+    border: 1px solid red;
+    font-weight: bold;
+    cursor: pointer;
+  }
 }
 .weightValue {
   display: flex;
@@ -14,7 +33,8 @@
   justify-content: center;
   margin-left: 10px;
   padding: 0 10px;
-  width: 350px;
+  width: 100%;
+  border: 1px solid #acc;
 }
 .itValue > p {
   margin-right: 20px;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../style/TopMenu.css";
 
 function TopMenu({
@@ -8,28 +8,24 @@ function TopMenu({
   setCash,
   setChangeCash,
 }) {
+  const [isClick, setIsClick] = useState(true);
+
   return (
     <section className="postType">
       <div
         className="type"
         onClick={() => {
           setWeightShow(true);
-          setTypeChecked("일반우편");
-          setWeightValue([]);
-          setCash(null);
-          setChangeCash(0);
+          setTypeChecked("익일특급");
         }}
       >
-        일반우편
+        익일특급
       </div>
       <div
         className="type"
         onClick={() => {
           setWeightShow(true);
           setTypeChecked("등기");
-          setWeightValue([]);
-          setCash(null);
-          setChangeCash(0);
         }}
       >
         등기
@@ -38,13 +34,10 @@ function TopMenu({
         className="type"
         onClick={() => {
           setWeightShow(true);
-          setTypeChecked("익일특급");
-          setWeightValue([]);
-          setCash(null);
-          setChangeCash(0);
+          setTypeChecked("일반우편");
         }}
       >
-        익일특급
+        일반우편
       </div>
     </section>
   );

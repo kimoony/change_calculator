@@ -20,6 +20,7 @@ function PostWeight({
     if (isChecked === true && inputWeight <= 5) {
       const newWeight = {
         id: weightId.current,
+        type: "일반",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 400,
@@ -32,6 +33,7 @@ function PostWeight({
     } else if (isChecked === true && inputWeight <= 25) {
       const newWeight = {
         id: weightId.current,
+        type: "일반",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 430,
@@ -44,6 +46,7 @@ function PostWeight({
     } else if (isChecked === true && inputWeight <= 50) {
       const newWeight = {
         id: weightId.current,
+        type: "일반",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 450,
@@ -56,6 +59,7 @@ function PostWeight({
     } else if (inputWeight < 51) {
       const newWeight = {
         id: weightId.current,
+        type: "일반",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 520,
@@ -68,6 +72,7 @@ function PostWeight({
     } else if (inputWeight < 101) {
       const newWeight = {
         id: weightId.current,
+        type: "일반",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 640,
@@ -80,6 +85,7 @@ function PostWeight({
     } else if (inputWeight < 151) {
       const newWeight = {
         id: weightId.current,
+        type: "일반",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 760,
@@ -92,6 +98,7 @@ function PostWeight({
     } else if (inputWeight < 201) {
       const newWeight = {
         id: weightId.current,
+        type: "일반",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 880,
@@ -104,6 +111,7 @@ function PostWeight({
     } else if (inputWeight < 251) {
       const newWeight = {
         id: weightId.current,
+        type: "일반",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 1000,
@@ -116,6 +124,7 @@ function PostWeight({
     } else if (inputWeight < 301) {
       const newWeight = {
         id: weightId.current,
+        type: "일반",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 1120,
@@ -128,6 +137,7 @@ function PostWeight({
     } else if (inputWeight < 351) {
       const newWeight = {
         id: weightId.current,
+        type: "일반",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 1240,
@@ -140,6 +150,7 @@ function PostWeight({
     } else if (inputWeight < 401) {
       const newWeight = {
         id: weightId.current,
+        type: "일반",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 1360,
@@ -152,6 +163,7 @@ function PostWeight({
     } else if (inputWeight < 451) {
       const newWeight = {
         id: weightId.current,
+        type: "일반",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 1480,
@@ -164,6 +176,7 @@ function PostWeight({
     } else if (inputWeight < 501) {
       const newWeight = {
         id: weightId.current,
+        type: "일반",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 1600,
@@ -176,6 +189,7 @@ function PostWeight({
     } else if (inputWeight < 551) {
       const newWeight = {
         id: weightId.current,
+        type: "일반",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 1720,
@@ -188,6 +202,7 @@ function PostWeight({
     } else if (inputWeight < 601) {
       const newWeight = {
         id: weightId.current,
+        type: "일반",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 1840,
@@ -200,6 +215,7 @@ function PostWeight({
     } else if (inputWeight < 651) {
       const newWeight = {
         id: weightId.current,
+        type: "일반",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 1960,
@@ -212,6 +228,7 @@ function PostWeight({
     } else if (inputWeight < 701) {
       const newWeight = {
         id: weightId.current,
+        type: "일반",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 2080,
@@ -224,6 +241,7 @@ function PostWeight({
     } else if (inputWeight < 751) {
       const newWeight = {
         id: weightId.current,
+        type: "일반",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 2200,
@@ -236,6 +254,7 @@ function PostWeight({
     } else if (inputWeight < 801) {
       const newWeight = {
         id: weightId.current,
+        type: "일반",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 2320,
@@ -248,6 +267,7 @@ function PostWeight({
     } else if (inputWeight < 851) {
       const newWeight = {
         id: weightId.current,
+        type: "일반",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 2440,
@@ -260,6 +280,7 @@ function PostWeight({
     } else if (inputWeight < 901) {
       const newWeight = {
         id: weightId.current,
+        type: "일반",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 2560,
@@ -272,6 +293,7 @@ function PostWeight({
     } else if (inputWeight < 951) {
       const newWeight = {
         id: weightId.current,
+        type: "일반",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 2680,
@@ -284,6 +306,7 @@ function PostWeight({
     } else if (inputWeight < 1001) {
       const newWeight = {
         id: weightId.current,
+        type: "일반",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 2800,
@@ -296,6 +319,7 @@ function PostWeight({
     } else if (inputWeight < 1201) {
       const newWeight = {
         id: weightId.current,
+        type: "일반",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 2920,
@@ -308,6 +332,7 @@ function PostWeight({
     } else if (inputWeight < 1401) {
       const newWeight = {
         id: weightId.current,
+        type: "일반",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 3040,
@@ -320,6 +345,7 @@ function PostWeight({
     } else if (inputWeight < 1601) {
       const newWeight = {
         id: weightId.current,
+        type: "일반",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 3160,
@@ -332,6 +358,7 @@ function PostWeight({
     } else if (1600 < inputWeight) {
       const newWeight = {
         id: weightId.current,
+        type: "일반",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 3280,

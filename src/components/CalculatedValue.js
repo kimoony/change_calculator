@@ -5,6 +5,7 @@ function CalculatedValue({
   setWeightValue,
   weightId,
   inputWeight,
+  onClickReset,
 }) {
   const quantityHandler = (id, value) => {
     const weightValueList = [...weightValue];
@@ -21,12 +22,16 @@ function CalculatedValue({
   return (
     <section className="calculatorBox">
       <section className="valueBox">
+        <button className="resetBtn" onClick={onClickReset}>
+          reset
+        </button>
         <div className="weightValue">
           <h3>
             {weightValue.map((it) => (
               <div className="itValue" key={it.id}>
+                <p>{it.type}</p>
                 <p>{it.weight}g</p>
-                <p>{it.price.toLocaleString("ko-KR")} 원</p>
+                <p>{it.price * it.quantity.toLocaleString("ko-KR")} 원</p>
                 <button
                   className="Btn minus"
                   onClick={() => it.quantity > 1 && quantityHandler(it.id, -1)}

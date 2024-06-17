@@ -13,14 +13,17 @@ function WeightNCharge({
   cash,
   setCash,
   onClickReset,
+  onClickClose,
   weightId,
   sum,
   resultValue,
   changeCash,
   setChangeCash,
+  quantitySum,
 }) {
   const [isChecked, setIsChecked] = useState(false);
   const [inputWeight, setInputWeight] = useState();
+
   const checkboxHandler = () => {
     setIsChecked(!isChecked);
   };
@@ -36,9 +39,10 @@ function WeightNCharge({
             거스름 돈: {changeCash > 0 ? changeCash.toLocaleString("ko-KR") : 0}{" "}
             원
           </h3>
+          <h3 className="quantity">총 건수: {quantitySum}</h3>;
         </section>
         <section className="closeBox">
-          <buton className="closeBtn" onClick={onClickReset}>
+          <buton className="closeBtn" onClick={onClickClose}>
             x
           </buton>
         </section>
@@ -58,8 +62,8 @@ function WeightNCharge({
               <p>규격</p>
             </div>
             <div className="selectBox">
-              {typeChecked === "일반우편" ? (
-                <PostWeight
+              {typeChecked === "익일특급" ? (
+                <NewFastRegisterWeight
                   weightValue={weightValue}
                   clickWeightValue={clickWeightValue}
                   weightId={weightId}
@@ -78,8 +82,8 @@ function WeightNCharge({
                   inputWeight={inputWeight}
                   setInputWeight={setInputWeight}
                 />
-              ) : typeChecked === "익일특급" ? (
-                <NewFastRegisterWeight
+              ) : typeChecked === "일반우편" ? (
+                <PostWeight
                   weightValue={weightValue}
                   clickWeightValue={clickWeightValue}
                   weightId={weightId}

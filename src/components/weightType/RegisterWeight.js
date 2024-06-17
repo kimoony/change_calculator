@@ -20,6 +20,7 @@ function RegisterWeight({
     if (isChecked === true && inputWeight <= 5) {
       const newWeight = {
         id: weightId.current,
+        type: "등기",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 2500,
@@ -32,6 +33,7 @@ function RegisterWeight({
     } else if (isChecked === true && inputWeight <= 25) {
       const newWeight = {
         id: weightId.current,
+        type: "등기",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 2530,
@@ -44,6 +46,7 @@ function RegisterWeight({
     } else if (isChecked === true && inputWeight <= 50) {
       const newWeight = {
         id: weightId.current,
+        type: "등기",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 2550,
@@ -56,6 +59,7 @@ function RegisterWeight({
     } else if (inputWeight < 51) {
       const newWeight = {
         id: weightId.current,
+        type: "등기",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 2620,
@@ -68,6 +72,7 @@ function RegisterWeight({
     } else if (inputWeight < 101) {
       const newWeight = {
         id: weightId.current,
+        type: "등기",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 2740,
@@ -80,6 +85,7 @@ function RegisterWeight({
     } else if (inputWeight < 151) {
       const newWeight = {
         id: weightId.current,
+        type: "등기",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 2860,
@@ -92,6 +98,7 @@ function RegisterWeight({
     } else if (inputWeight < 201) {
       const newWeight = {
         id: weightId.current,
+        type: "등기",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 2980,
@@ -104,6 +111,7 @@ function RegisterWeight({
     } else if (inputWeight < 251) {
       const newWeight = {
         id: weightId.current,
+        type: "등기",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 3100,
@@ -116,6 +124,7 @@ function RegisterWeight({
     } else if (inputWeight < 301) {
       const newWeight = {
         id: weightId.current,
+        type: "등기",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 3220,
@@ -128,6 +137,7 @@ function RegisterWeight({
     } else if (inputWeight < 351) {
       const newWeight = {
         id: weightId.current,
+        type: "등기",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 3340,
@@ -140,6 +150,7 @@ function RegisterWeight({
     } else if (inputWeight < 401) {
       const newWeight = {
         id: weightId.current,
+        type: "등기",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 3460,
@@ -152,6 +163,7 @@ function RegisterWeight({
     } else if (inputWeight < 451) {
       const newWeight = {
         id: weightId.current,
+        type: "등기",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 3580,
@@ -164,6 +176,7 @@ function RegisterWeight({
     } else if (inputWeight < 501) {
       const newWeight = {
         id: weightId.current,
+        type: "등기",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 3700,
@@ -176,6 +189,7 @@ function RegisterWeight({
     } else if (inputWeight < 551) {
       const newWeight = {
         id: weightId.current,
+        type: "등기",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 3820,
@@ -188,6 +202,7 @@ function RegisterWeight({
     } else if (inputWeight < 601) {
       const newWeight = {
         id: weightId.current,
+        type: "등기",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 3940,
@@ -200,6 +215,7 @@ function RegisterWeight({
     } else if (inputWeight < 651) {
       const newWeight = {
         id: weightId.current,
+        type: "등기",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 4060,
@@ -212,6 +228,7 @@ function RegisterWeight({
     } else if (inputWeight < 701) {
       const newWeight = {
         id: weightId.current,
+        type: "등기",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 4180,
@@ -224,6 +241,7 @@ function RegisterWeight({
     } else if (inputWeight < 751) {
       const newWeight = {
         id: weightId.current,
+        type: "등기",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 4300,
@@ -236,6 +254,7 @@ function RegisterWeight({
     } else if (inputWeight < 801) {
       const newWeight = {
         id: weightId.current,
+        type: "등기",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 4420,
@@ -248,6 +267,7 @@ function RegisterWeight({
     } else if (inputWeight < 851) {
       const newWeight = {
         id: weightId.current,
+        type: "등기",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 4540,
@@ -260,6 +280,7 @@ function RegisterWeight({
     } else if (inputWeight < 901) {
       const newWeight = {
         id: weightId.current,
+        type: "등기",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 4660,
@@ -272,6 +293,7 @@ function RegisterWeight({
     } else if (inputWeight < 951) {
       const newWeight = {
         id: weightId.current,
+        type: "등기",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 4780,
@@ -284,6 +306,7 @@ function RegisterWeight({
     } else if (inputWeight < 1001) {
       const newWeight = {
         id: weightId.current,
+        type: "등기",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 4900,
@@ -296,6 +319,7 @@ function RegisterWeight({
     } else if (inputWeight < 1201) {
       const newWeight = {
         id: weightId.current,
+        type: "등기",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 5020,
@@ -308,6 +332,7 @@ function RegisterWeight({
     } else if (inputWeight < 1401) {
       const newWeight = {
         id: weightId.current,
+        type: "등기",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 5140,
@@ -320,6 +345,7 @@ function RegisterWeight({
     } else if (inputWeight < 1601) {
       const newWeight = {
         id: weightId.current,
+        type: "등기",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 5260,
@@ -332,6 +358,7 @@ function RegisterWeight({
     } else if (1600 < inputWeight) {
       const newWeight = {
         id: weightId.current,
+        type: "등기",
         tNf: isChecked,
         weight: Number(inputWeight),
         price: 5380,

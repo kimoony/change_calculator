@@ -6,7 +6,7 @@ import { useRef, useState } from "react";
 
 function App() {
   const [weightShow, setWeightShow] = useState(false);
-  const [typeChecked, setTypeChecked] = useState("");
+  const [typeChecked, setTypeChecked] = useState("익일");
   const [weightValue, setWeightValue] = useState([]);
   const [cash, setCash] = useState(null);
   const [changeCash, setChangeCash] = useState(0);
@@ -17,22 +17,33 @@ function App() {
   const onClickReset = () => {
     setWeightValue([]);
     setCash(null);
-    setTypeChecked("");
+    setTypeChecked(typeChecked);
+    setChangeCash(0);
+    weightId.current = 0;
+  };
+
+  const onClickClose = () => {
+    setWeightValue([]);
+    setCash(null);
+    setTypeChecked(null);
     setWeightShow(false);
     setChangeCash(0);
     weightId.current = 0;
   };
-  console.log(weightValue);
 
   const sum = weightValue.reduce((acc, currentValue) => {
     console.log(currentValue);
     return (acc + currentValue.price) * currentValue.quantity;
   }, 0);
 
+  const quantitySum = weightValue.reduce((acc, currentValue) => {
+    return acc + currentValue.quantity;
+  }, 0);
+
   const resultValue = () => {
     setChangeCash(cash - sum);
   };
-
+  console.log(typeChecked);
   return (
     <section className="mainBox">
       <h1 className="title">등기 거스름돈 계산기</h1>
@@ -51,11 +62,13 @@ function App() {
           cash={cash}
           setCash={setCash}
           onClickReset={onClickReset}
+          onClickClose={onClickClose}
           sum={sum}
           weightId={weightId}
           resultValue={resultValue}
           changeCash={changeCash}
           setChangeCash={setChangeCash}
+          quantitySum={quantitySum}
         />
       ) : null}
       {/* <section className="changeCashBox">
