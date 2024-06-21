@@ -1,4 +1,8 @@
 import "../style/CalculatedValue.css";
+import { IoMdRefresh } from "react-icons/io";
+import { FaMinusCircle } from "react-icons/fa";
+import { FaPlusCircle } from "react-icons/fa";
+import { MdDeleteForever } from "react-icons/md";
 
 function CalculatedValue({
   weightValue,
@@ -6,6 +10,7 @@ function CalculatedValue({
   weightId,
   inputWeight,
   onClickReset,
+  isChecked,
 }) {
   const quantityHandler = (id, value) => {
     const weightValueList = [...weightValue];
@@ -22,38 +27,60 @@ function CalculatedValue({
   return (
     <section className="calculatorBox">
       <section className="valueBox">
-        <button className="resetBtn" onClick={onClickReset}>
-          reset
-        </button>
-        <div className="weightValue">
-          <h3>
-            {weightValue.map((it) => (
-              <div className="itValue" key={it.id}>
-                <p>{it.type}</p>
-                <p>{it.weight}g</p>
-                <p>{it.price * it.quantity.toLocaleString("ko-KR")} 원</p>
-                <button
-                  className="Btn minus"
-                  onClick={() => it.quantity > 1 && quantityHandler(it.id, -1)}
-                >
-                  -
-                </button>
-                <span className="quantity">{it.quantity}</span>
-                <button
-                  className="Btn plus"
-                  onClick={() => quantityHandler(it.id, 1)}
-                >
-                  +
-                </button>
-                <button
-                  className="removeBtn"
-                  onClick={() => removeWeightValue(it.id)}
-                >
-                  x
-                </button>
-              </div>
-            ))}
+        <div className="menu">
+          <h3 className="menu_type">종류</h3>
+          <h3 className="menu_weight">무게</h3>
+          <h3 className="menu_price">단가</h3>
+          <h3 className="menu_quantity">수량</h3>
+          <h3 className="resetBtn" onClick={onClickReset}>
+            <IoMdRefresh />
           </h3>
+        </div>
+        <div className="weightValue">
+          <div>
+            {weightValue.map((it) => (
+              <ul key={it.id}>
+                <li className="itValue">
+                  <h3 className="itValue_type">{it.type}</h3>
+                  {it.tNf ? (
+                    <h3 className="itValue_weight" style={{ color: "hotpink" }}>
+                      {it.weight}g
+                    </h3>
+                  ) : (
+                    <h3 className="itValue_weight" style={{ color: "ccc" }}>
+                      {it.weight}g
+                    </h3>
+                  )}
+                  <h3 className="itValue_price">
+                    {it.price * it.quantity.toLocaleString("ko-KR")} 원
+                  </h3>
+                  <div className="itValue_quantity">
+                    <div
+                      className="Btn minus"
+                      onClick={() =>
+                        it.quantity > 1 && quantityHandler(it.id, -1)
+                      }
+                    >
+                      <FaMinusCircle />
+                    </div>
+                    <h4 className="it_quantity">{it.quantity}</h4>
+                    <div
+                      className="Btn plus"
+                      onClick={() => quantityHandler(it.id, 1)}
+                    >
+                      <FaPlusCircle />
+                    </div>
+                  </div>
+                  <div
+                    className="removeBtn"
+                    onClick={() => removeWeightValue(it.id)}
+                  >
+                    <MdDeleteForever />
+                  </div>
+                </li>
+              </ul>
+            ))}
+          </div>
         </div>
       </section>
     </section>

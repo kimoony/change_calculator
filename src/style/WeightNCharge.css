@@ -32,19 +32,16 @@
   width: 50%;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 .closeBtn {
-  margin: 10px 0 20px 0;
-  padding: 2.5px 10px;
-  font-size: 20px;
-  background-color: #fff;
-  color: #000;
-  border-radius: 10px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
   &:hover {
-    color: #fff;
-    background-color: red;
-    font-weight: bold;
+    color: red;
     cursor: pointer;
+    transition: all 0.1s ease;
   }
 }
 

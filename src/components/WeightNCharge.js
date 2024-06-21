@@ -5,6 +5,7 @@ import RegisterWeight from "./weightType/RegisterWeight";
 import NewFastRegisterWeight from "./weightType/NewFastRegisterWeight";
 import ReceiveCash from "./ReceiveCash";
 import CalculatedValue from "./CalculatedValue";
+import { CgCloseO } from "react-icons/cg";
 
 function WeightNCharge({
   typeChecked,
@@ -27,7 +28,7 @@ function WeightNCharge({
   const checkboxHandler = () => {
     setIsChecked(!isChecked);
   };
-  console.log(isChecked);
+
   return (
     <section className="postBox">
       <section className="middleBox">
@@ -43,7 +44,7 @@ function WeightNCharge({
         </section>
         <section className="closeBox">
           <buton className="closeBtn" onClick={onClickClose}>
-            x
+            <CgCloseO />
           </buton>
         </section>
       </section>
@@ -71,6 +72,7 @@ function WeightNCharge({
                   isChecked={isChecked}
                   inputWeight={inputWeight}
                   setInputWeight={setInputWeight}
+                  typeChecked={typeChecked}
                 />
               ) : typeChecked === "등기" ? (
                 <RegisterWeight
@@ -81,6 +83,7 @@ function WeightNCharge({
                   isChecked={isChecked}
                   inputWeight={inputWeight}
                   setInputWeight={setInputWeight}
+                  typeChecked={typeChecked}
                 />
               ) : typeChecked === "일반" ? (
                 <PostWeight
@@ -91,6 +94,7 @@ function WeightNCharge({
                   isChecked={isChecked}
                   inputWeight={inputWeight}
                   setInputWeight={setInputWeight}
+                  typeChecked={typeChecked}
                 />
               ) : null}
             </div>
@@ -113,6 +117,7 @@ function WeightNCharge({
               weightId={weightId}
               resultValue={resultValue}
               inputWeight={inputWeight}
+              isChecked={isChecked}
             />
           ) : null}
         </section>

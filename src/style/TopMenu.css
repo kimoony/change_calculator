@@ -1,15 +1,14 @@
 .postType {
-  width: 430px;
+  width: 500px;
   display: flex;
   justify-content: space-between;
   margin: 20px 0px;
 }
-.type {
+.typeBtn {
   background-color: #fff;
   border-radius: 5px;
-  height: 20px;
   padding: 10px 20px;
-  font-size: 18px;
+  font-size: 22px;
 
   font-weight: bold;
   &:hover {

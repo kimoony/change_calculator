@@ -1,44 +1,35 @@
-import React, { useState } from "react";
 import "../style/TopMenu.css";
 
-function TopMenu({
-  setWeightShow,
-  setTypeChecked,
-  setWeightValue,
-  setCash,
-  setChangeCash,
-}) {
-  const [isClick, setIsClick] = useState(true);
-
+function TopMenu({ weightShow, setWeightShow, setTypeChecked }) {
   return (
     <section className="postType">
-      <div
-        className="type"
+      <button
+        className="typeBtn"
         onClick={() => {
           setWeightShow(true);
           setTypeChecked("익일");
         }}
       >
         익일특급
-      </div>
-      <div
-        className="type"
+      </button>
+      <button
+        className="typeBtn"
         onClick={() => {
           setWeightShow(true);
           setTypeChecked("등기");
         }}
       >
         등기
-      </div>
-      <div
-        className="type"
+      </button>
+      <button
+        className="typeBtn"
         onClick={() => {
           setWeightShow(true);
           setTypeChecked("일반");
         }}
       >
         일반우편
-      </div>
+      </button>
     </section>
   );
 }

@@ -51,6 +51,7 @@ function App() {
         등기 거스름돈 계산기
       </h1>
       <TopMenu
+        weightShow={weightShow}
         setWeightShow={setWeightShow}
         setTypeChecked={setTypeChecked}
         setWeightValue={setWeightValue}
@@ -74,22 +75,6 @@ function App() {
           quantitySum={quantitySum}
         />
       ) : null}
-      {/* <section className="changeCashBox">
-        {weightValue.length !== 0 || cash !== null ? (
-          <CalculatedValue
-            weightValue={weightValue}
-            setWeightValue={setWeightValue}
-            cash={cash}
-            setCash={setCash}
-            changeCash={changeCash}
-            setChangeCash={setChangeCash}
-            onClickReset={onClickReset}
-            sum={sum}
-            weightId={weightId}
-            resultValue={resultValue}
-          />
-        ) : null}
-      </section> */}
     </section>
   );
 }
