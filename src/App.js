@@ -47,6 +47,9 @@ function App() {
   console.log(typeChecked);
   return (
     <section className="mainBox">
+      <header>
+        <p>made kimoony</p>
+      </header>
       <h1 className="title" onClick={onClickReset}>
         등기 거스름돈 계산기
       </h1>
