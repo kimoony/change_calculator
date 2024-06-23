@@ -17,7 +17,7 @@ function FastRegisterWeight({
   const onSubmit = (e) => {
     e.preventDefault();
     // weight if
-    if (isChecked === true && inputWeight <= 5) {
+    if (isChecked === true && inputWeight < 5) {
       const newWeight = {
         id: weightId.current,
         type: typeChecked,
@@ -30,7 +30,7 @@ function FastRegisterWeight({
       clickWeightValue([...weightValue, newWeight]);
       console.log(newWeight);
       setInputWeight("");
-    } else if (isChecked === true && inputWeight <= 25) {
+    } else if (isChecked === true && inputWeight < 25) {
       const newWeight = {
         id: weightId.current,
         type: typeChecked,
@@ -43,7 +43,7 @@ function FastRegisterWeight({
       clickWeightValue([...weightValue, newWeight]);
       console.log(newWeight);
       setInputWeight("");
-    } else if (isChecked === true && inputWeight <= 50) {
+    } else if (isChecked === true && inputWeight < 50) {
       const newWeight = {
         id: weightId.current,
         type: typeChecked,
@@ -56,7 +56,7 @@ function FastRegisterWeight({
       clickWeightValue([...weightValue, newWeight]);
       console.log(newWeight);
       setInputWeight("");
-    } else if (inputWeight <= 50) {
+    } else if (inputWeight < 50) {
       const newWeight = {
         id: weightId.current,
         type: typeChecked,
@@ -69,7 +69,7 @@ function FastRegisterWeight({
       clickWeightValue([...weightValue, newWeight]);
       console.log(newWeight);
       setInputWeight("");
-    } else if (inputWeight < 101) {
+    } else if (inputWeight < 100) {
       const newWeight = {
         id: weightId.current,
         type: typeChecked,
@@ -82,7 +82,7 @@ function FastRegisterWeight({
       clickWeightValue([...weightValue, newWeight]);
       console.log(newWeight);
       setInputWeight("");
-    } else if (inputWeight < 151) {
+    } else if (inputWeight < 150) {
       const newWeight = {
         id: weightId.current,
         type: typeChecked,
@@ -95,7 +95,7 @@ function FastRegisterWeight({
       clickWeightValue([...weightValue, newWeight]);
       console.log(newWeight);
       setInputWeight("");
-    } else if (inputWeight < 201) {
+    } else if (inputWeight < 200) {
       const newWeight = {
         id: weightId.current,
         type: typeChecked,
@@ -108,7 +108,7 @@ function FastRegisterWeight({
       clickWeightValue([...weightValue, newWeight]);
       console.log(newWeight);
       setInputWeight("");
-    } else if (inputWeight < 251) {
+    } else if (inputWeight < 250) {
       const newWeight = {
         id: weightId.current,
         type: typeChecked,
@@ -121,7 +121,7 @@ function FastRegisterWeight({
       clickWeightValue([...weightValue, newWeight]);
       console.log(newWeight);
       setInputWeight("");
-    } else if (inputWeight < 301) {
+    } else if (inputWeight < 300) {
       const newWeight = {
         id: weightId.current,
         type: typeChecked,
@@ -134,7 +134,7 @@ function FastRegisterWeight({
       clickWeightValue([...weightValue, newWeight]);
       console.log(newWeight);
       setInputWeight("");
-    } else if (inputWeight < 351) {
+    } else if (inputWeight < 350) {
       const newWeight = {
         id: weightId.current,
         type: typeChecked,
@@ -147,7 +147,7 @@ function FastRegisterWeight({
       clickWeightValue([...weightValue, newWeight]);
       console.log(newWeight);
       setInputWeight("");
-    } else if (inputWeight < 401) {
+    } else if (inputWeight < 400) {
       const newWeight = {
         id: weightId.current,
         type: typeChecked,
@@ -160,7 +160,7 @@ function FastRegisterWeight({
       clickWeightValue([...weightValue, newWeight]);
       console.log(newWeight);
       setInputWeight("");
-    } else if (inputWeight < 451) {
+    } else if (inputWeight < 450) {
       const newWeight = {
         id: weightId.current,
         type: typeChecked,
@@ -173,7 +173,7 @@ function FastRegisterWeight({
       clickWeightValue([...weightValue, newWeight]);
       console.log(newWeight);
       setInputWeight("");
-    } else if (inputWeight < 501) {
+    } else if (inputWeight < 500) {
       const newWeight = {
         id: weightId.current,
         type: typeChecked,
@@ -186,7 +186,7 @@ function FastRegisterWeight({
       clickWeightValue([...weightValue, newWeight]);
       console.log(newWeight);
       setInputWeight("");
-    } else if (inputWeight < 551) {
+    } else if (inputWeight < 550) {
       const newWeight = {
         id: weightId.current,
         type: typeChecked,
@@ -199,7 +199,7 @@ function FastRegisterWeight({
       clickWeightValue([...weightValue, newWeight]);
       console.log(newWeight);
       setInputWeight("");
-    } else if (inputWeight < 601) {
+    } else if (inputWeight < 600) {
       const newWeight = {
         id: weightId.current,
         type: typeChecked,
@@ -212,7 +212,7 @@ function FastRegisterWeight({
       clickWeightValue([...weightValue, newWeight]);
       console.log(newWeight);
       setInputWeight("");
-    } else if (inputWeight < 651) {
+    } else if (inputWeight < 650) {
       const newWeight = {
         id: weightId.current,
         type: typeChecked,
@@ -225,7 +225,7 @@ function FastRegisterWeight({
       clickWeightValue([...weightValue, newWeight]);
       console.log(newWeight);
       setInputWeight("");
-    } else if (inputWeight < 701) {
+    } else if (inputWeight < 700) {
       const newWeight = {
         id: weightId.current,
         type: typeChecked,
@@ -238,7 +238,7 @@ function FastRegisterWeight({
       clickWeightValue([...weightValue, newWeight]);
       console.log(newWeight);
       setInputWeight("");
-    } else if (inputWeight < 751) {
+    } else if (inputWeight < 750) {
       const newWeight = {
         id: weightId.current,
         type: typeChecked,
@@ -251,7 +251,7 @@ function FastRegisterWeight({
       clickWeightValue([...weightValue, newWeight]);
       console.log(newWeight);
       setInputWeight("");
-    } else if (inputWeight < 801) {
+    } else if (inputWeight < 800) {
       const newWeight = {
         id: weightId.current,
         type: typeChecked,
@@ -264,7 +264,7 @@ function FastRegisterWeight({
       clickWeightValue([...weightValue, newWeight]);
       console.log(newWeight);
       setInputWeight("");
-    } else if (inputWeight < 851) {
+    } else if (inputWeight < 850) {
       const newWeight = {
         id: weightId.current,
         type: typeChecked,
@@ -277,7 +277,7 @@ function FastRegisterWeight({
       clickWeightValue([...weightValue, newWeight]);
       console.log(newWeight);
       setInputWeight("");
-    } else if (inputWeight < 901) {
+    } else if (inputWeight < 900) {
       const newWeight = {
         id: weightId.current,
         type: typeChecked,
@@ -290,7 +290,7 @@ function FastRegisterWeight({
       clickWeightValue([...weightValue, newWeight]);
       console.log(newWeight);
       setInputWeight("");
-    } else if (inputWeight < 951) {
+    } else if (inputWeight < 950) {
       const newWeight = {
         id: weightId.current,
         type: typeChecked,
@@ -303,7 +303,7 @@ function FastRegisterWeight({
       clickWeightValue([...weightValue, newWeight]);
       console.log(newWeight);
       setInputWeight("");
-    } else if (inputWeight < 1001) {
+    } else if (inputWeight < 1000) {
       const newWeight = {
         id: weightId.current,
         type: typeChecked,
@@ -316,7 +316,7 @@ function FastRegisterWeight({
       clickWeightValue([...weightValue, newWeight]);
       console.log(newWeight);
       setInputWeight("");
-    } else if (inputWeight < 1201) {
+    } else if (inputWeight < 1200) {
       const newWeight = {
         id: weightId.current,
         type: typeChecked,
@@ -329,7 +329,7 @@ function FastRegisterWeight({
       clickWeightValue([...weightValue, newWeight]);
       console.log(newWeight);
       setInputWeight("");
-    } else if (inputWeight < 1401) {
+    } else if (inputWeight < 1400) {
       const newWeight = {
         id: weightId.current,
         type: typeChecked,
@@ -342,7 +342,7 @@ function FastRegisterWeight({
       clickWeightValue([...weightValue, newWeight]);
       console.log(newWeight);
       setInputWeight("");
-    } else if (inputWeight < 1601) {
+    } else if (inputWeight < 1600) {
       const newWeight = {
         id: weightId.current,
         type: typeChecked,
@@ -355,7 +355,7 @@ function FastRegisterWeight({
       clickWeightValue([...weightValue, newWeight]);
       console.log(newWeight);
       setInputWeight("");
-    } else if (1600 < inputWeight) {
+    } else if (1600 <= inputWeight) {
       const newWeight = {
         id: weightId.current,
         type: typeChecked,
