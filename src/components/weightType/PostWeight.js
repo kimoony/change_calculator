@@ -62,7 +62,7 @@ function PostWeight({
         id: weightId.current,
         type: typeChecked,
         tNf: isChecked,
-        weight: "50g",
+        weight: 50,
         price: 520,
         quantity: 1,
       };

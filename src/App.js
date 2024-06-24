@@ -56,10 +56,9 @@ function App() {
       <TopMenu
         weightShow={weightShow}
         setWeightShow={setWeightShow}
+        typeChecked={typeChecked}
         setTypeChecked={setTypeChecked}
         setWeightValue={setWeightValue}
-        setCash={setCash}
-        setChangeCash={setChangeCash}
       />
       {weightShow === true ? (
         <WeightNCharge

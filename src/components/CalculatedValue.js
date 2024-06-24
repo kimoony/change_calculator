@@ -41,7 +41,20 @@ function CalculatedValue({
             {weightValue.map((it) => (
               <ul key={it.id}>
                 <li className="itValue">
-                  <h3 className="itValue_type">{it.type}</h3>
+                  {it.type === "익일" ? (
+                    <h3 className="itValue_type" style={{ color: "orangered" }}>
+                      {it.type}
+                    </h3>
+                  ) : it.type === "등기" ? (
+                    <h3
+                      className="itValue_type"
+                      style={{ color: "yellowgreen" }}
+                    >
+                      {it.type}
+                    </h3>
+                  ) : it.type === "일반" ? (
+                    <h3 className="itValue_type">{it.type}</h3>
+                  ) : null}
                   {it.tNf ? (
                     <h3 className="itValue_weight" style={{ color: "hotpink" }}>
                       {it.weight}g
