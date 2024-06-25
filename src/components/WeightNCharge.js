@@ -5,7 +5,7 @@ import RegisterWeight from "./weightType/RegisterWeight";
 import NewFastRegisterWeight from "./weightType/NewFastRegisterWeight";
 import ReceiveCash from "./ReceiveCash";
 import CalculatedValue from "./CalculatedValue";
-import { CgCloseO } from "react-icons/cg";
+import { SumAndChangeCash } from "./SumAndChangeCash";
 
 function WeightNCharge({
   typeChecked,
@@ -31,23 +31,12 @@ function WeightNCharge({
 
   return (
     <section className="postBox">
-      <section className="middleBox">
-        <section className="sumNchangeCash">
-          <h3 className="sum">
-            총 합계: {sum > 0 ? sum.toLocaleString("ko-KR") : 0} 원
-          </h3>
-          <h3 className="cash">
-            거스름 돈: {changeCash > 0 ? changeCash.toLocaleString("ko-KR") : 0}
-            원
-          </h3>
-          <h3 className="quantity">총 건수: {quantitySum}</h3>
-        </section>
-        <section className="closeBox">
-          <buton className="closeBtn" onClick={onClickClose}>
-            <CgCloseO />
-          </buton>
-        </section>
-      </section>
+      <SumAndChangeCash
+        sum={sum}
+        changeCash={changeCash}
+        quantitySum={quantitySum}
+        onClickClose={onClickClose}
+      />
       <section className="postWeightCharge">
         <section className="inputWeightCharge">
           <section className="postWeight">

@@ -69,7 +69,7 @@ function CalculatedValue({
                     <h3 className="itValue_weight">{it.weight}g</h3>
                   )}
                   <h3 className="itValue_price">
-                    {it.price * it.quantity.toLocaleString("ko-KR")} 원
+                    {(it.price * it.quantity).toLocaleString("ko-KR")} 원
                   </h3>
                   <div className="itValue_quantity">
                     <div

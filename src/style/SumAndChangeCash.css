@@ -1,0 +1,44 @@
+.info {
+  width: 750px;
+  text-align: center;
+}
+.info > h3 {
+  color: red;
+}
+
+.middleBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.sumNchangeCash {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.sum {
+  color: orange;
+}
+.cash {
+  color: aquamarine;
+}
+.quantity {
+  color: yellow;
+}
+
+.closeBox {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.closeBtn {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  &:hover {
+    color: red;
+    cursor: pointer;
+    transition: all 0.1s ease;
+  }
+}
