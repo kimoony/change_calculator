@@ -118,6 +118,7 @@ function WeightNCharge({
               resultValue={resultValue}
               inputWeight={inputWeight}
               isChecked={isChecked}
+              typeChecked={typeChecked}
             />
           ) : null}
         </section>

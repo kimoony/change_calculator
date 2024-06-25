@@ -11,6 +11,7 @@ function CalculatedValue({
   inputWeight,
   onClickReset,
   isChecked,
+  typeChecked,
 }) {
   const quantityHandler = (id, value) => {
     const weightValueList = [...weightValue];
@@ -42,27 +43,30 @@ function CalculatedValue({
               <ul key={it.id}>
                 <li className="itValue">
                   {it.type === "익일" ? (
-                    <h3 className="itValue_type" style={{ color: "orangered" }}>
+                    <h3
+                      className="itValue_type"
+                      style={{
+                        backgroundColor: "blue",
+                      }}
+                    >
                       {it.type}
                     </h3>
                   ) : it.type === "등기" ? (
                     <h3
                       className="itValue_type"
-                      style={{ color: "yellowgreen" }}
+                      style={{
+                        backgroundColor: "green",
+                      }}
                     >
                       {it.type}
                     </h3>
                   ) : it.type === "일반" ? (
                     <h3 className="itValue_type">{it.type}</h3>
                   ) : null}
-                  {it.tNf ? (
-                    <h3 className="itValue_weight" style={{ color: "hotpink" }}>
-                      {it.weight}g
-                    </h3>
+                  {it.tNf && it.weight < 51 ? (
+                    <h3 className="itValue_weight">{it.weight}g(규격)</h3>
                   ) : (
-                    <h3 className="itValue_weight" style={{ color: "ccc" }}>
-                      {it.weight}g
-                    </h3>
+                    <h3 className="itValue_weight">{it.weight}g</h3>
                   )}
                   <h3 className="itValue_price">
                     {it.price * it.quantity.toLocaleString("ko-KR")} 원
