@@ -39,6 +39,7 @@
     transition: all 0.1s ease;
   }
 }
+
 .weightValue {
   display: flex;
   width: 100%;

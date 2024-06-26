@@ -5,13 +5,13 @@ import RegisterWeight from "./weightType/RegisterWeight";
 import NewFastRegisterWeight from "./weightType/NewFastRegisterWeight";
 import ReceiveCash from "./ReceiveCash";
 import CalculatedValue from "./CalculatedValue";
-import { SumAndChangeCash } from "./SumAndChangeCash";
+import { SumAndTotal } from "./SumAndTotal";
 
 function WeightNCharge({
   typeChecked,
   weightValue,
   clickWeightValue,
-  cash,
+  // cash,
   setCash,
   onClickReset,
   onClickClose,
@@ -31,86 +31,81 @@ function WeightNCharge({
 
   return (
     <section className="postBox">
-      <SumAndChangeCash
-        sum={sum}
-        changeCash={changeCash}
-        quantitySum={quantitySum}
-        onClickClose={onClickClose}
-      />
-      <section className="postWeightCharge">
-        <section className="inputWeightCharge">
-          <section className="postWeight">
-            <div className="selectBox">
-              <h4>{typeChecked} 무게</h4>
-              <input
-                type="checkbox"
-                name="Out of standard"
-                id="1"
-                onChange={checkboxHandler}
-                className="checkBox"
+      <section className="postInputReslutBox">
+        <SumAndTotal
+          sum={sum}
+          changeCash={changeCash}
+          quantitySum={quantitySum}
+          onClickClose={onClickClose}
+        />
+        <section className="postWeightCharge">
+          <section className="inputWeightCharge">
+            <section className="postWeight">
+              <div className="selectBox">
+                <h4>{typeChecked} 무게</h4>
+                <input
+                  type="checkbox"
+                  name="Out of standard"
+                  id="1"
+                  onChange={checkboxHandler}
+                  className="checkBox"
+                />
+                <p>규격</p>
+              </div>
+              <div className="selectBox">
+                {typeChecked === "익일" ? (
+                  <NewFastRegisterWeight
+                    weightValue={weightValue}
+                    clickWeightValue={clickWeightValue}
+                    weightId={weightId}
+                    resultValue={resultValue}
+                    isChecked={isChecked}
+                    inputWeight={inputWeight}
+                    setInputWeight={setInputWeight}
+                    typeChecked={typeChecked}
+                  />
+                ) : typeChecked === "등기" ? (
+                  <RegisterWeight
+                    weightValue={weightValue}
+                    clickWeightValue={clickWeightValue}
+                    weightId={weightId}
+                    resultValue={resultValue}
+                    isChecked={isChecked}
+                    inputWeight={inputWeight}
+                    setInputWeight={setInputWeight}
+                    typeChecked={typeChecked}
+                  />
+                ) : typeChecked === "일반" ? (
+                  <PostWeight
+                    weightValue={weightValue}
+                    clickWeightValue={clickWeightValue}
+                    weightId={weightId}
+                    resultValue={resultValue}
+                    isChecked={isChecked}
+                    inputWeight={inputWeight}
+                    setInputWeight={setInputWeight}
+                    typeChecked={typeChecked}
+                  />
+                ) : null}
+              </div>
+            </section>
+            <section className="postCharge">
+              <ReceiveCash
+                setCash={setCash}
+                resultValue={resultValue}
+                changeCash={changeCash}
               />
-              <p>규격</p>
-            </div>
-            <div className="selectBox">
-              {typeChecked === "익일" ? (
-                <NewFastRegisterWeight
-                  weightValue={weightValue}
-                  clickWeightValue={clickWeightValue}
-                  weightId={weightId}
-                  resultValue={resultValue}
-                  isChecked={isChecked}
-                  inputWeight={inputWeight}
-                  setInputWeight={setInputWeight}
-                  typeChecked={typeChecked}
-                />
-              ) : typeChecked === "등기" ? (
-                <RegisterWeight
-                  weightValue={weightValue}
-                  clickWeightValue={clickWeightValue}
-                  weightId={weightId}
-                  resultValue={resultValue}
-                  isChecked={isChecked}
-                  inputWeight={inputWeight}
-                  setInputWeight={setInputWeight}
-                  typeChecked={typeChecked}
-                />
-              ) : typeChecked === "일반" ? (
-                <PostWeight
-                  weightValue={weightValue}
-                  clickWeightValue={clickWeightValue}
-                  weightId={weightId}
-                  resultValue={resultValue}
-                  isChecked={isChecked}
-                  inputWeight={inputWeight}
-                  setInputWeight={setInputWeight}
-                  typeChecked={typeChecked}
-                />
-              ) : null}
-            </div>
-          </section>
-          <section className="postCharge">
-            <ReceiveCash setCash={setCash} resultValue={resultValue} />
+            </section>
           </section>
         </section>
-        <section className="changeCashBox">
-          {weightValue.length !== 0 || cash !== null ? (
-            <CalculatedValue
-              weightValue={weightValue}
-              setWeightValue={clickWeightValue}
-              cash={cash}
-              setCash={setCash}
-              changeCash={changeCash}
-              setChangeCash={setChangeCash}
-              onClickReset={onClickReset}
-              sum={sum}
-              weightId={weightId}
-              resultValue={resultValue}
-              inputWeight={inputWeight}
-              isChecked={isChecked}
-              typeChecked={typeChecked}
-            />
-          ) : null}
-        </section>
+      </section>
+      <section className="changeCashBox">
+        <CalculatedValue
+          weightValue={weightValue}
+          setWeightValue={clickWeightValue}
+          onClickReset={onClickReset}
+          weightId={weightId}
+        />
       </section>
     </section>
   );

@@ -8,10 +8,7 @@ function CalculatedValue({
   weightValue,
   setWeightValue,
   weightId,
-  inputWeight,
   onClickReset,
-  isChecked,
-  typeChecked,
 }) {
   const quantityHandler = (id, value) => {
     const weightValueList = [...weightValue];

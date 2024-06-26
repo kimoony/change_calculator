@@ -59,6 +59,18 @@ function App() {
         typeChecked={typeChecked}
         setTypeChecked={setTypeChecked}
         setWeightValue={setWeightValue}
+        weightValue={weightValue}
+        clickWeightValue={setWeightValue}
+        cash={cash}
+        setCash={setCash}
+        onClickReset={onClickReset}
+        onClickClose={onClickClose}
+        sum={sum}
+        weightId={weightId}
+        resultValue={resultValue}
+        changeCash={changeCash}
+        setChangeCash={setChangeCash}
+        quantitySum={quantitySum}
       />
       {weightShow === true ? (
         <WeightNCharge
