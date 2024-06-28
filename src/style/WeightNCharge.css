@@ -1,29 +1,25 @@
 .postBox {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: auto;
+  height: 600px;
   width: 100vw;
   border-radius: 20px;
-  margin-top: 20px;
-  padding: 0px 20px 20px 0px;
+  padding-right: 20px;
 }
 
 .postInputResultBox {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: auto;
   width: 800px;
   border-radius: 20px;
-  margin-top: 20px;
-  padding: 0px 20px 20px 0px;
+  padding-right: 20px;
+  margin-top: 9px;
 }
 
 .postWeightCharge {
   display: flex;
   flex-direction: column;
-  height: 40vh;
   width: 100%;
   padding: 20px 15px;
   color: #fff;
@@ -40,7 +36,6 @@
   flex-direction: column;
   align-items: center;
   margin-left: 0px;
-  height: auto;
   width: 100%;
   color: #fff;
 }

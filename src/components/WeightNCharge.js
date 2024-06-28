@@ -11,7 +11,6 @@ function WeightNCharge({
   typeChecked,
   weightValue,
   clickWeightValue,
-  // cash,
   setCash,
   onClickReset,
   onClickClose,
@@ -19,7 +18,7 @@ function WeightNCharge({
   sum,
   resultValue,
   changeCash,
-  setChangeCash,
+
   quantitySum,
 }) {
   const [isChecked, setIsChecked] = useState(false);
@@ -31,7 +30,7 @@ function WeightNCharge({
 
   return (
     <section className="postBox">
-      <section className="postInputReslutBox">
+      <section className="postInputResultBox">
         <SumAndTotal
           sum={sum}
           changeCash={changeCash}

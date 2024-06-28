@@ -9,6 +9,7 @@ function FastRegisterWeight({
   inputWeight,
   setInputWeight,
   typeChecked,
+  sameQuality,
 }) {
   const onChangeValue = (e) => {
     setInputWeight(e.target.value);
@@ -378,7 +379,7 @@ function FastRegisterWeight({
         value={inputWeight}
         onChange={onChangeValue}
         placeholder="무게입력"
-        onKeyDown={(e) => e.key === "Enter" && resultValue()}
+        onKeyDown={(e) => e.key === "Enter"}
       />
     </form>
   );

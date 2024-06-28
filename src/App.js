@@ -12,7 +12,6 @@ function App() {
   const [changeCash, setChangeCash] = useState(0);
 
   const weightId = useRef(0);
-  console.log(typeChecked);
 
   // 초기화
   const onClickReset = () => {
@@ -33,7 +32,7 @@ function App() {
   };
 
   const sum = weightValue.reduce((acc, currentValue) => {
-    console.log(currentValue);
+    // console.log(currentValue);
     return (acc + currentValue.price) * currentValue.quantity;
   }, 0);
 
@@ -44,7 +43,6 @@ function App() {
   const resultValue = () => {
     setChangeCash(cash - sum);
   };
-  console.log(typeChecked);
   return (
     <section className="mainBox">
       <header>

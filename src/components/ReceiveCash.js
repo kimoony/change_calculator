@@ -18,7 +18,6 @@ function ReceiveCash({ setCash, changeCash, resultValue }) {
             className="calculBtn"
             onClick={() => {
               resultValue();
-              alert(changeCash.toLocaleString("ko-KR"));
             }}
           >
             계산

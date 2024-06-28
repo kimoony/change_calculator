@@ -380,7 +380,7 @@ function PostWeight({
         value={inputWeight}
         onChange={onChangeValue}
         placeholder="무게입력"
-        onKeyDown={(e) => e.key === "Enter" && resultValue()}
+        onKeyDown={(e) => e.key === "Enter"}
       />
       {/* <button className="weightBtn" type="submit">
         입력
