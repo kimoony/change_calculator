@@ -17,14 +17,6 @@
   color: yellow;
   padding: 5px 10px;
 }
-.cash {
-  background-color: forestgreen;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 10px;
-  width: 200px;
-  text-align: center;
-}
 
 .closeBox {
   width: 50%;

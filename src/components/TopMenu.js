@@ -7,7 +7,7 @@ function TopMenu({ weightShow, setWeightShow, typeChecked, setTypeChecked }) {
         <section className="postType">
           <button
             className="typeBtn"
-            style={{ backgroundColor: "darkorange" }}
+            style={{ backgroundColor: "rgb(82, 218, 157)" }}
             onClick={() => {
               setWeightShow(true);
               setTypeChecked("익일");
@@ -47,7 +47,7 @@ function TopMenu({ weightShow, setWeightShow, typeChecked, setTypeChecked }) {
           </button>
           <button
             className="typeBtn"
-            style={{ backgroundColor: "darkorange" }}
+            style={{ backgroundColor: "rgb(82, 218, 157)" }}
             onClick={() => {
               setWeightShow(true);
               setTypeChecked("등기");
@@ -87,7 +87,7 @@ function TopMenu({ weightShow, setWeightShow, typeChecked, setTypeChecked }) {
           </button>
           <button
             className="typeBtn"
-            style={{ backgroundColor: "darkorange" }}
+            style={{ backgroundColor: "rgb(82, 218, 157)" }}
             onClick={() => {
               setWeightShow(true);
               setTypeChecked("일반");

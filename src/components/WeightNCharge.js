@@ -6,6 +6,7 @@ import NewFastRegisterWeight from "./weightType/NewFastRegisterWeight";
 import ReceiveCash from "./ReceiveCash";
 import CalculatedValue from "./CalculatedValue";
 import { SumAndTotal } from "./SumAndTotal";
+import ChangeCharge from "./ChangeCharge";
 
 function WeightNCharge({
   typeChecked,
@@ -96,6 +97,15 @@ function WeightNCharge({
               />
             </section>
           </section>
+          {changeCash >= 0 ? (
+            <section className="chargeValue">
+              <ChangeCharge changeCash={changeCash} />
+            </section>
+          ) : (
+            <section className="chargeValue">
+              <h1 className="minusValue">합계 또는 받은 돈을 확인하세요!</h1>
+            </section>
+          )}
         </section>
       </section>
       <section className="changeCashBox">
