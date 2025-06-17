@@ -10,7 +10,7 @@ function ReceiveCash({ setCash, changeCash, resultValue }) {
           <input
             type="number"
             className="inputValue"
-            placeholder="받은금액입력"
+            placeholder="받은 금액 입력 후 Enter"
             onChange={onChaneValue}
             onKeyDown={(e) => e.key === "Enter" && resultValue()}
           />

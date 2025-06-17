@@ -24,7 +24,7 @@ function FastRegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 5,
-        price: 3500,
+        price: 3800,
         quantity: 1,
       };
       weightId.current += 1;
@@ -37,7 +37,7 @@ function FastRegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 25,
-        price: 3530,
+        price: 3830,
         quantity: 1,
       };
       weightId.current += 1;
@@ -50,7 +50,7 @@ function FastRegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 50,
-        price: 3550,
+        price: 3850,
         quantity: 1,
       };
       weightId.current += 1;
@@ -63,7 +63,7 @@ function FastRegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 50,
-        price: 3620,
+        price: 3920,
         quantity: 1,
       };
       weightId.current += 1;
@@ -76,7 +76,7 @@ function FastRegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 100,
-        price: 3740,
+        price: 4040,
         quantity: 1,
       };
       weightId.current += 1;
@@ -89,7 +89,7 @@ function FastRegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 150,
-        price: 3860,
+        price: 4160,
         quantity: 1,
       };
       weightId.current += 1;
@@ -102,7 +102,7 @@ function FastRegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 200,
-        price: 3980,
+        price: 4280,
         quantity: 1,
       };
       weightId.current += 1;
@@ -115,7 +115,7 @@ function FastRegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 250,
-        price: 4100,
+        price: 4400,
         quantity: 1,
       };
       weightId.current += 1;
@@ -128,7 +128,7 @@ function FastRegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 300,
-        price: 4220,
+        price: 4520,
         quantity: 1,
       };
       weightId.current += 1;
@@ -141,7 +141,7 @@ function FastRegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 350,
-        price: 4340,
+        price: 4640,
         quantity: 1,
       };
       weightId.current += 1;
@@ -154,7 +154,7 @@ function FastRegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 400,
-        price: 4460,
+        price: 4760,
         quantity: 1,
       };
       weightId.current += 1;
@@ -167,7 +167,7 @@ function FastRegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 450,
-        price: 4580,
+        price: 4880,
         quantity: 1,
       };
       weightId.current += 1;
@@ -180,7 +180,7 @@ function FastRegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 500,
-        price: 4700,
+        price: 5000,
         quantity: 1,
       };
       weightId.current += 1;
@@ -193,7 +193,7 @@ function FastRegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 550,
-        price: 4820,
+        price: 5120,
         quantity: 1,
       };
       weightId.current += 1;
@@ -206,7 +206,7 @@ function FastRegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 600,
-        price: 4940,
+        price: 5240,
         quantity: 1,
       };
       weightId.current += 1;
@@ -219,7 +219,7 @@ function FastRegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 650,
-        price: 5060,
+        price: 5360,
         quantity: 1,
       };
       weightId.current += 1;
@@ -232,7 +232,7 @@ function FastRegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 700,
-        price: 5180,
+        price: 5480,
         quantity: 1,
       };
       weightId.current += 1;
@@ -245,7 +245,7 @@ function FastRegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 750,
-        price: 5300,
+        price: 5600,
         quantity: 1,
       };
       weightId.current += 1;
@@ -258,7 +258,7 @@ function FastRegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 800,
-        price: 5420,
+        price: 5720,
         quantity: 1,
       };
       weightId.current += 1;
@@ -271,7 +271,7 @@ function FastRegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 850,
-        price: 5540,
+        price: 5840,
         quantity: 1,
       };
       weightId.current += 1;
@@ -284,7 +284,7 @@ function FastRegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 900,
-        price: 5660,
+        price: 5960,
         quantity: 1,
       };
       weightId.current += 1;
@@ -297,7 +297,7 @@ function FastRegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 950,
-        price: 5780,
+        price: 6080,
         quantity: 1,
       };
       weightId.current += 1;
@@ -310,7 +310,7 @@ function FastRegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 1000,
-        price: 5900,
+        price: 6200,
         quantity: 1,
       };
       weightId.current += 1;
@@ -323,7 +323,7 @@ function FastRegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 1200,
-        price: 6020,
+        price: 6320,
         quantity: 1,
       };
       weightId.current += 1;
@@ -336,7 +336,7 @@ function FastRegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 1400,
-        price: 6140,
+        price: 6440,
         quantity: 1,
       };
       weightId.current += 1;
@@ -349,7 +349,7 @@ function FastRegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 1600,
-        price: 6260,
+        price: 6560,
         quantity: 1,
       };
       weightId.current += 1;
@@ -362,7 +362,7 @@ function FastRegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 1800,
-        price: 6380,
+        price: 6680,
         quantity: 1,
       };
       weightId.current += 1;
@@ -378,7 +378,7 @@ function FastRegisterWeight({
         className="weightNum"
         value={inputWeight}
         onChange={onChangeValue}
-        placeholder="무게입력"
+        placeholder="무게입력 후 Enter"
         onKeyDown={(e) => e.key === "Enter"}
       />
     </form>

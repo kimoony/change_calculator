@@ -24,7 +24,7 @@ function RegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 5,
-        price: 2500,
+        price: 2800,
         quantity: 1,
       };
       weightId.current += 1;
@@ -37,7 +37,7 @@ function RegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 25,
-        price: 2530,
+        price: 2830,
         quantity: 1,
       };
       weightId.current += 1;
@@ -50,7 +50,7 @@ function RegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 50,
-        price: 2550,
+        price: 2850,
         quantity: 1,
       };
       weightId.current += 1;
@@ -63,7 +63,7 @@ function RegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 50,
-        price: 2620,
+        price: 2920,
         quantity: 1,
       };
       weightId.current += 1;
@@ -76,7 +76,7 @@ function RegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 100,
-        price: 2740,
+        price: 3040,
         quantity: 1,
       };
       weightId.current += 1;
@@ -89,7 +89,7 @@ function RegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 150,
-        price: 2860,
+        price: 3160,
         quantity: 1,
       };
       weightId.current += 1;
@@ -102,7 +102,7 @@ function RegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 200,
-        price: 2980,
+        price: 3280,
         quantity: 1,
       };
       weightId.current += 1;
@@ -115,7 +115,7 @@ function RegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 250,
-        price: 3100,
+        price: 3400,
         quantity: 1,
       };
       weightId.current += 1;
@@ -128,7 +128,7 @@ function RegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 300,
-        price: 3220,
+        price: 3520,
         quantity: 1,
       };
       weightId.current += 1;
@@ -141,7 +141,7 @@ function RegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 350,
-        price: 3340,
+        price: 3640,
         quantity: 1,
       };
       weightId.current += 1;
@@ -154,7 +154,7 @@ function RegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 400,
-        price: 3460,
+        price: 3760,
         quantity: 1,
       };
       weightId.current += 1;
@@ -167,7 +167,7 @@ function RegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 450,
-        price: 3580,
+        price: 3880,
         quantity: 1,
       };
       weightId.current += 1;
@@ -180,7 +180,7 @@ function RegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 500,
-        price: 3700,
+        price: 4000,
         quantity: 1,
       };
       weightId.current += 1;
@@ -193,7 +193,7 @@ function RegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 550,
-        price: 3820,
+        price: 4120,
         quantity: 1,
       };
       weightId.current += 1;
@@ -206,7 +206,7 @@ function RegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 600,
-        price: 3940,
+        price: 4240,
         quantity: 1,
       };
       weightId.current += 1;
@@ -219,7 +219,7 @@ function RegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 650,
-        price: 4060,
+        price: 4360,
         quantity: 1,
       };
       weightId.current += 1;
@@ -232,7 +232,7 @@ function RegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 700,
-        price: 4180,
+        price: 4480,
         quantity: 1,
       };
       weightId.current += 1;
@@ -245,7 +245,7 @@ function RegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 750,
-        price: 4300,
+        price: 4600,
         quantity: 1,
       };
       weightId.current += 1;
@@ -258,7 +258,7 @@ function RegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 800,
-        price: 4420,
+        price: 4720,
         quantity: 1,
       };
       weightId.current += 1;
@@ -271,7 +271,7 @@ function RegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 850,
-        price: 4540,
+        price: 4840,
         quantity: 1,
       };
       weightId.current += 1;
@@ -284,7 +284,7 @@ function RegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 900,
-        price: 4660,
+        price: 4960,
         quantity: 1,
       };
       weightId.current += 1;
@@ -297,7 +297,7 @@ function RegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 950,
-        price: 4780,
+        price: 5080,
         quantity: 1,
       };
       weightId.current += 1;
@@ -310,7 +310,7 @@ function RegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 1000,
-        price: 4900,
+        price: 5200,
         quantity: 1,
       };
       weightId.current += 1;
@@ -323,7 +323,7 @@ function RegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 1200,
-        price: 5020,
+        price: 5320,
         quantity: 1,
       };
       weightId.current += 1;
@@ -336,7 +336,7 @@ function RegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 1400,
-        price: 5140,
+        price: 5440,
         quantity: 1,
       };
       weightId.current += 1;
@@ -349,7 +349,7 @@ function RegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 1600,
-        price: 5260,
+        price: 5560,
         quantity: 1,
       };
       weightId.current += 1;
@@ -362,7 +362,7 @@ function RegisterWeight({
         type: typeChecked,
         tNf: isChecked,
         weight: 1800,
-        price: 5380,
+        price: 5680,
         quantity: 1,
       };
       weightId.current += 1;
@@ -379,7 +379,7 @@ function RegisterWeight({
         className="weightNum"
         value={inputWeight}
         onChange={onChangeValue}
-        placeholder="무게입력"
+        placeholder="무게입력 후 Enter"
         onKeyDown={(e) => e.key === "Enter"}
       />
       {/* <button className="weightBtn" type="submit">
